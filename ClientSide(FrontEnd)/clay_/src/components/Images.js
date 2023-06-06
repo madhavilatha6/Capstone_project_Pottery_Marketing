@@ -33,22 +33,18 @@ function Images(){
                     <div className="image">
                         <img className="img2" src={img2} alt=""></img>
                         <p>plain Flower pot  </p>
-                        {/* <p>Plant Container for Indoor and Outdoor</p>  */}
                     </div> 
                     <div className="image">
                         <img className="img3" src={img3} alt=""></img>
                         <p>Design Flower pot  </p>
-                        {/* <p>Plant Container for Indoor and Outdoor</p>  */}
                     </div>
                     <div className="image">
                         <img className="img4" src={img4} alt=""></img>
                         <p>stand Flower pot </p>
-                        {/* <p>Plant Container for Indoor and Outdoor</p>  */}
                     </div>
                     <div className="image">
                         <img className="img5" src={img5} alt=""></img>
                         <p>model Flower pot  </p>
-                        {/* <p>Plant Container for Indoor and Outdoor</p>  */}
                     </div> 
                 </div>
             </div>
@@ -89,6 +85,8 @@ function Images(){
                 </div>
                 <div className="seconddiv">
                      <img className="img12" src={img12} alt=""></img>
+                     
+
                 </div>
             </div>
             <div className="middlebox">
@@ -98,7 +96,7 @@ function Images(){
                     <p>Welcome to</p>
                     <b>Pottery Shop</b>
                     <p>Pottery is the ceramic material which makes up potteryware.</p>
-                    <button>ReadMore    </button>
+                    <button>ReadMore</button>
                 </div> 
 
             </div>

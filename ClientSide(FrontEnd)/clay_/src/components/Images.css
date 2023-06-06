@@ -24,7 +24,6 @@ p{
 }
 .img2{
     border: 2px solid gray;
-    /* padding: 60px; */
     width: 200px;
     height: 200px;
     border-radius: 150px;
@@ -32,21 +31,18 @@ p{
 }
 .img3{
     border: 2px solid gray;
-    /* padding: 60px; */
     width: 200px;
     height: 200px;
     border-radius: 150px;
 }
 .img4{
     border: 2px solid gray;
-    /* padding: 60px; */
     width: 200px;
     height: 200px;
     border-radius: 150px;
 }
 .img5{
     border: 2px solid gray;
-    /* padding: 60px; */
     width: 200px;
     height: 200px;
     border-radius: 150px;
@@ -74,8 +70,6 @@ p{
     padding: 15px;
     border: 2px solid gray;
     text-align: center;
-    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
-    border-radius: 40px;
 }
 .h{
     margin-top: -65px;
@@ -107,7 +101,6 @@ p{
      height:400px;
     border: 2px solid gray;
     margin-left: 750px;
-    /* background-color; */
     margin-top: -450px;
     text-align: center;
     color: black;
@@ -173,8 +166,6 @@ p{
     height: 400px;
     border: 2px solid gray;
     width: 550px;
-    /* margin: 20px; */
-    /* background-color: ; */
     background-color: gray;
    
 }
@@ -182,8 +173,6 @@ p{
     height: 400px;
     border: 2px solid gray;
     width: 490px;
-    /* margin: 20px; */
-   
 }
 .img11{
     width: 200px;
@@ -204,18 +193,13 @@ p{
 .img14{
     width: 200px;
     height: 200px;
-    /* margin-left: 450px; */
     margin-bottom: 1000px;
     margin-left: 150px;
 }
 .middlebox{
-    /* border: 2px solid red; */
-    /* width: 200px;
-    height: 200px; */
     margin: 10px 500px 10px 500px;
     height: 400px;
     margin-top: -410px;
-    /* background-color: aqua; */
 }
 .alltext{
     text-align: center;
@@ -223,7 +207,6 @@ p{
     width: 400px;
     height: 400px;
     margin-left: 60px;
-    /* background-color: blue; */
 }
 .alltext > button{
     padding: 10px;
