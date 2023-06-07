@@ -42,7 +42,7 @@ function Login({islogin,setIsLogin}){
                 <div className='starting1234'>
                 <h1 className='h11'>Login page</h1>
                     <input type="text" className="username1" placeholder='UserName' onChange={e=>setUsername1(e.target.value)}/><br></br>
-                    <input type="number" className="password1" placeholder='password' onChange={e=>setPassword1(e.target.value)}/><br></br>
+                    <input type="text" className="password1" placeholder='password' onChange={e=>setPassword1(e.target.value)}/><br></br>
                     <button className='submit1' onClick={btnClick}>Submit</button>
                     <h3><span onClick={loginButtonClick}>signup page</span></h3>
                     <h3 className='span'><span onClick={loginButton}>Forgot page</span></h3>

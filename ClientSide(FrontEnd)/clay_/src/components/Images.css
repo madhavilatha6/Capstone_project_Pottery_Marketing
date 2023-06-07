@@ -211,3 +211,53 @@ p{
 .alltext > button{
     padding: 10px;
 }
+.footer{
+    background-color: rgb(18, 9, 9);
+    width: 70%;
+    height: 40%;
+    margin-left: 200px;
+}
+.footer1{
+        background-color: gray;
+        height: 40%;
+        display: flex;
+        padding: 70px;
+        margin-top: 400px;
+}
+.service{
+    margin-left: 150px;
+    font-size: 20px;
+}
+.contact{
+    margin-left: 150px;
+    font-size: 20px;
+}
+.social{
+    margin-left: 150px;
+    font-size: 20px;
+}
+.about{
+    margin-left: 50px;
+    font-size: 20px; 
+}
+.logo > img{
+    width: 60px;
+    height: 60px;
+    margin-left: -180px;
+    margin-top: 300px;
+    /* margin: -120px; */
+    border-radius: 40px;
+}
+.subscribe{
+    width: 320px;
+    height: 60px;
+    border: 2px solid red;
+    border-radius: 40px;
+    margin-left: 60px;
+}
+.img19{
+    width: 200px;
+    height: 400px;
+    margin-left: 260px;
+    margin-top: -80px;
+}

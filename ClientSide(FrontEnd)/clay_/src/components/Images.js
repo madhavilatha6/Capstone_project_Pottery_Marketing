@@ -13,6 +13,11 @@ import './Images.css';
  import img12 from '/home/jtbbjoining/Pottery_Marketing/ClientSide(FrontEnd)/clay_/src/bell2.jpg';
  import img13 from '/home/jtbbjoining/Pottery_Marketing/ClientSide(FrontEnd)/clay_/src/OTP-METAL25.webp';
  import img14 from '/home/jtbbjoining/Pottery_Marketing/ClientSide(FrontEnd)/clay_/src/Screenshot from 2023-06-06 00-21-36.png'
+ import img15 from '/home/jtbbjoining/Pottery_Marketing/ClientSide(FrontEnd)/clay_/src/Screenshot from 2023-06-08 01-30-52.png'
+ import img16 from '/home/jtbbjoining/Pottery_Marketing/ClientSide(FrontEnd)/clay_/src/Screenshot from 2023-06-08 01-31-22.png'
+ import img17 from '/home/jtbbjoining/Pottery_Marketing/ClientSide(FrontEnd)/clay_/src/Screenshot from 2023-06-08 01-32-09.png'
+ import img18 from '/home/jtbbjoining/Pottery_Marketing/ClientSide(FrontEnd)/clay_/src/Screenshot from 2023-06-08 01-34-18.png'
+ import img19 from '/home/jtbbjoining/Pottery_Marketing/ClientSide(FrontEnd)/clay_/src/Screenshot from 2023-06-08 01-54-32.png'
 function Images(){
 
     return(
@@ -99,6 +104,43 @@ function Images(){
                     <button>ReadMore</button>
                 </div> 
 
+            </div>
+            <div className='footer1'>
+                    <div className='about'>
+                        <h4>AboutUs</h4>
+                        <p>Potters</p>
+                        <p>Vision</p>
+                        <p>Aim</p>
+                    </div>
+                    <div className='service'>
+                        <h4>Services</h4>
+                        <p>Writing</p>
+                        <p>Vision</p>
+                        <p>Aim</p>
+                    </div>
+                    <div className='contact'>
+                        <h4>Contactus</h4>
+                        <p>Andrapradesh</p>
+                        <p>Karnataka</p>
+                        <p>Tamilnadu</p>
+                    </div>
+                    <div className='social'>
+                        <h4>Socialmedia</h4>
+                        <p>Facebook</p>
+                        <p>WhatsApp</p>
+                        <p>Twitter</p>
+                        <p>Google</p>
+                        <p>Instagram</p>
+                    </div>
+                    <div className='logo'>
+                    <img className="img15" src={img15} alt=""></img>
+                    <img className="img16" src={img16} alt=""></img>
+                    <img className="img17" src={img17} alt=""></img>
+                    <img className="img18" src={img18} alt=""></img>
+                    </div>
+                    <div>
+                    <img className="img19" src={img19} alt=""></img>
+                    </div>  
             </div>
      </div>
     )
