@@ -1,67 +1,43 @@
 import './Images.css';
- import img1 from '/home/jtbbjoining/Pottery_Marketing/ClientSide(FrontEnd)/clay_/src/Screenshot from 2023-06-08 15-00-41.png';
- import img2 from '/home/jtbbjoining/Pottery_Marketing/ClientSide(FrontEnd)/clay_/src/Screenshot from 2023-06-08 15-39-02.png';
- import img3 from '/home/jtbbjoining/Pottery_Marketing/ClientSide(FrontEnd)/clay_/src/Screenshot from 2023-06-08 15-39-54.png';
- import img4 from '/home/jtbbjoining/Pottery_Marketing/ClientSide(FrontEnd)/clay_/src/Screenshot from 2023-06-08 15-40-23.png';
- import img5 from '/home/jtbbjoining/Pottery_Marketing/ClientSide(FrontEnd)/clay_/src/Screenshot from 2023-06-08 15-38-40.png';
- import img6 from '/home/jtbbjoining/Pottery_Marketing/ClientSide(FrontEnd)/clay_/src/image.jpg';
- import img7 from '/home/jtbbjoining/Pottery_Marketing/ClientSide(FrontEnd)/clay_/src/Screenshot from 2023-06-05 19-53-44.png';
- import img8 from '/home/jtbbjoining/Pottery_Marketing/ClientSide(FrontEnd)/clay_/src/Screenshot from 2023-06-05 19-53-25.png';
- import img9 from '/home/jtbbjoining/Pottery_Marketing/ClientSide(FrontEnd)/clay_/src/download.png';
- import img10 from '/home/jtbbjoining/Pottery_Marketing/ClientSide(FrontEnd)/clay_/src/dolor.png';
- import img11 from '/home/jtbbjoining/Pottery_Marketing/ClientSide(FrontEnd)/clay_/src/bell2.jpg';
- import img12 from '/home/jtbbjoining/Pottery_Marketing/ClientSide(FrontEnd)/clay_/src/bell2.jpg';
- import img13 from '/home/jtbbjoining/Pottery_Marketing/ClientSide(FrontEnd)/clay_/src/OTP-METAL25.webp';
- import img14 from '/home/jtbbjoining/Pottery_Marketing/ClientSide(FrontEnd)/clay_/src/Screenshot from 2023-06-06 00-21-36.png'
- import img15 from '/home/jtbbjoining/Pottery_Marketing/ClientSide(FrontEnd)/clay_/src/Screenshot from 2023-06-08 01-30-52.png'
- import img16 from '/home/jtbbjoining/Pottery_Marketing/ClientSide(FrontEnd)/clay_/src/Screenshot from 2023-06-08 01-31-22.png'
- import img17 from '/home/jtbbjoining/Pottery_Marketing/ClientSide(FrontEnd)/clay_/src/Screenshot from 2023-06-08 01-32-09.png'
- import img18 from '/home/jtbbjoining/Pottery_Marketing/ClientSide(FrontEnd)/clay_/src/Screenshot from 2023-06-08 01-34-18.png'
- import img19 from '/home/jtbbjoining/Pottery_Marketing/ClientSide(FrontEnd)/clay_/src/Screenshot from 2023-06-08 01-54-32.png'
- import img20 from '/home/jtbbjoining/Pottery_Marketing/ClientSide(FrontEnd)/clay_/src/pot1.png'
- import img21 from '/home/jtbbjoining/Pottery_Marketing/ClientSide(FrontEnd)/clay_/src/pot2.png'
- import img22 from '/home/jtbbjoining/Pottery_Marketing/ClientSide(FrontEnd)/clay_/src/pot3.png'
- import img23 from '/home/jtbbjoining/Pottery_Marketing/ClientSide(FrontEnd)/clay_/src/pot4.png'
- import img24 from '/home/jtbbjoining/Pottery_Marketing/ClientSide(FrontEnd)/clay_/src/Screenshot from 2023-06-08 15-55-44.png';
 function Images(){
 
     return(
         <div>
             <div>
-                <img className="img1" src={img1} alt=""></img>
+                <img className="homepageimage" src="resources/homepage.png" alt=""></img>
                 <div className="nav">
                     <div>Home</div>
                     <div>Category</div>
                     <div>About Us</div>
-                    <button className="btn">Register</button>
-                    <button className="btn">Add to cart</button>
+                    <button className="button">Register</button>
+                    <button className="button">Add to cart</button>
                 </div>
-            <div className='smallpot'>
+            <div className='smallPot'>
                     <div className='picture'>
-                        <img className="img20" src={img20} alt=""></img>
+                        <img className="potteryClass" src="resources/potteryClass.png" alt=""></img>
                         <h2>Pottery Classes</h2>
-                        <div className='ptag1'>
+                        <div className='paragraph'>
                         <p>Integer condime condimentum </p><p>condimented dsemeu u finibus</p><p>portturabitur imperdiet.</p>
                         </div>
                     </div>
                     <div className='picture1'>
-                        <img className="img21" src={img21} alt=""></img>
+                        <img className="designPot" src="resources/designPot.png" alt=""></img>
                         <h2>Design Process</h2>
-                        <div className='ptag1'>
+                        <div className='paragraph'>
                         <p>Integer condime condimentum </p><p>condimented dsemeu u finibus</p><p>portturabitur imperdiet.</p>
                         </div>
                     </div>
                     <div className='picture2'>
-                        <img className="img22" src={img22} alt=""></img>
+                        <img className="giftCart" src="resources/giftCart.png" alt=""></img>
                         <h2>Gift Cards</h2>
-                        <div className='ptag1'>
+                        <div className='paragraph'>
                         <p>Integer condime condimentum </p><p>condimented dsemeu u finibus</p><p>portturabitur imperdiet.</p>
                         </div>
                     </div>
                     <div className='picture3'>
-                        <img className="img23" src={img23} alt=""></img>
+                        <img className="potteryWheel" src="resources/potteryWheel.png" alt=""></img>
                         <h2>Pottery Wheel</h2>
-                        <div className='ptag1'>
+                        <div className='paragraph'>
                         <p>Integer condime condimentum </p><p>condimented dsemeu u finibus</p><p>portturabitur imperdiet.</p>
                         </div>
                     </div>
@@ -74,34 +50,34 @@ function Images(){
             <div className="box">
                 <div className="second">
                     <div className="image">
-                        <img className="img2" src={img2} alt=""></img>
+                        <img className="plainpot" src="resources/plainPot.png" alt=""></img>
                         <p>plain Flower pot  </p>
                     </div> 
                     <div className="image">
-                        <img className="img3" src={img3} alt=""></img>
+                        <img className="bottle" src="resources/bottle.png" alt=""></img>
                         <p>Design Flower pot  </p>
                     </div>
                     <div className="image">
-                        <img className="img4" src={img4} alt=""></img>
+                        <img className="dinnerpot" src="resources/dinnerPot.png" alt=""></img>
                         <p>stand Flower pot </p>
                     </div>
                     <div className="image">
-                        <img className="img5" src={img5} alt=""></img>
+                        <img className="plainpot" src="resources/plainPotSet.png" alt=""></img>
                         <p>model Flower pot  </p>
                     </div> 
                    </div>
             </div>
             <div className='hangingbell'>
                 <div>
-                    <img className="img24" src={img24} alt=""></img>
+                    <img className="decorativebell" src="resources/decorativeBell.png" alt=""></img>
                 </div>
                 <div>
-                    <img className="img25" src={img24} alt=""></img>
+                    <img className="decorative" src="resources/decorativeBell.png" alt=""></img>
                 </div>
             </div>
             <div>
                 <div className="nextpage">
-                    <div className="inside"> <img className="img6" src={img6} alt=""></img></div>
+                    <div className="inside"> <img className="img6" src="resources/teaSet.jpg" alt=""></img></div>
                 </div>
                 <div className="nextpage1">
                     <p>About Us</p>
@@ -112,37 +88,37 @@ function Images(){
             </div>
             <div className="icons">
                 <div>
-                    <img className="img7" src={img7} alt=""></img>
-                    <p className="ptag">FREE SHIPPING</p>
+                    <img className="smile" src="resources/smile.png" alt=""></img>
+                    <p className="iconsparagraph">FREE SHIPPING</p>
                </div>
                <div>
-                    <img className="img8" src={img8} alt=""></img>
-                    <p className="ptag">Item Return & Exchange</p>
+                    <img className="dolor" src="resources/dolor.png" alt=""></img>
+                    <p className="iconsparagraph">Item Return & Exchange</p>
                </div>
                <div>
-                    <img className="img9" src={img9} alt=""></img>
-                    <p className="ptag">Worldwide Free Shipping</p>
+                    <img className="cart" src="resources/cart.png" alt=""></img>
+                    <p className="iconsparagraph">Worldwide Free Shipping</p>
                </div>
                <div>
-                    <img className="img10" src={img10} alt=""></img>
-                    <p className="ptag">24/7 ONLINE SUPPORT</p>
+                    <img className="return" src="resources/return.png" alt=""></img>
+                    <p className="iconsparagraph">24/7 ONLINE SUPPORT</p>
                </div>
             </div>
             <div className="maindiv">
                 <div className="firstdiv">
-                    <img className="img11" src={img11} alt=""></img>
-                    <img className="img13" src={img13} alt=""></img>
+                    <img className="img11" src="resources/hangingBell.jpg" alt=""></img>
+                    <img className="img13" src="resources/hangingPotFlowers.webp" alt=""></img>
                     
                 </div>
                 <div className="seconddiv">
-                     <img className="img12" src={img12} alt=""></img>
+                     <img className="img12" src="resources/hangingBell.jpg" alt=""></img>
                      
 
                 </div>
             </div>
             <div className="middlebox">
                  
-                     <img className="img14" src={img14} alt=""></img>
+                     <img className="img14" src="resources/hangingPot.png" alt=""></img>
                 <div className="alltext">
                     <p>Welcome to</p>
                     <b>Pottery Shop</b>
@@ -179,13 +155,13 @@ function Images(){
                         <p>Instagram</p>
                     </div>
                     <div className='logo'>
-                    <img className="img15" src={img15} alt=""></img>
-                    <img className="img16" src={img16} alt=""></img>
-                    <img className="img17" src={img17} alt=""></img>
-                    <img className="img18" src={img18} alt=""></img>
+                    <img className="google" src="resources/google.png" alt=""></img>
+                    <img className="img16" src="resources/facebook.png" alt=""></img>
+                    <img className="img17" src="resources/instagram.png" alt=""></img>
+                    <img className="img18" src="resources/whatsapp.png" alt=""></img>
                     </div>
                     <div>
-                    <img className="img19" src={img19} alt=""></img>
+                    <img className="img19" src="resources/colorPots.png" alt=""></img>
                     </div>  
             </div>
      </div>

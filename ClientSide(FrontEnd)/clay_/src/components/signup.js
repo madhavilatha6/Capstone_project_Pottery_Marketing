@@ -1,8 +1,7 @@
 import React from 'react';
 import './signup.css';
 import {useState} from'react';
-import image1 from '/home/jtbbjoining/Pottery_Marketing/ClientSide(FrontEnd)/clay_/src/Screenshot from 2023-06-06 17-07-16.png';
-function Signup({islogin,setIsLogin}){
+function Signup(){
     const[name,setName]=useState("");
     const [username,setUsername]=useState("");
     const [email,setEmail]=useState("");
@@ -23,14 +22,12 @@ function Signup({islogin,setIsLogin}){
     }
    
     }
-    function signUpButtonClick(){
-        setIsLogin(true);
-    }
+    
     return(
         <div id="layout">
             <div>
-                <img className="image1" src={image1} alt=""></img>
-                <img className="image2" src={image1} alt=""></img>
+                <img className="image1" src="resources/hangingBrownBell.png" alt=""></img>
+                <img className="image2" src="resources/hangingBrownBell.png" alt=""></img>
              </div>
              
             <div className='starting'>

@@ -1,8 +1,7 @@
 import React from 'react';
 import './login.css';
 import { useState } from 'react';
-import image4 from '/home/jtbbjoining/Pottery_Marketing/ClientSide(FrontEnd)/clay_/src/Screenshot from 2023-06-06 17-07-16.png';
-function Login({islogin,setIsLogin}){
+function Login(){
     const [username1,setUsername1]=useState("");
     const [password1,setPassword1]=useState("");
     
@@ -24,17 +23,12 @@ function Login({islogin,setIsLogin}){
             }
         }
     }
-    function loginButtonClick(){
-        setIsLogin(false);
-    }
-    function loginButton(){
-        setIsLogin(false);
-    }
+    
     return(
         <div>
             <div>
-                <img className="image4" src={image4} alt=""></img>
-                <img className="image5" src={image4} alt=""></img>
+                <img className="image4" src="resources/hangingBrownBell.png" alt=""></img>
+                <img className="image5" src="resources/hangingBrownBell.png" alt=""></img>
              </div>
              
             <div className='starting123'>
@@ -44,8 +38,8 @@ function Login({islogin,setIsLogin}){
                     <input type="text" className="username1" placeholder='UserName' onChange={e=>setUsername1(e.target.value)}/><br></br>
                     <input type="number" className="password1" placeholder='password' onChange={e=>setPassword1(e.target.value)}/><br></br>
                     <button className='submit1' onClick={btnClick}>Submit</button>
-                    <h3><span onClick={loginButtonClick}>signup page</span></h3>
-                    <h3 className='span'><span onClick={loginButton}>Forgot page</span></h3>
+                    <h3>signup page</h3>
+                    <h3 className='span'>Forgot page</h3>
                 </div>
         </div>   
         </div>
