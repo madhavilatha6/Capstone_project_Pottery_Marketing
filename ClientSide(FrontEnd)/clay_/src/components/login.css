@@ -1,10 +1,10 @@
-.starting123{
+.form-container{
     display: flex;
     margin-top: -2%;
     justify-content: center;
     border-radius: 70px;
 }
-.starting1234{
+.form-container4{
     padding: 30px;
     width: 550px;
     margin-top: -490px;
@@ -12,7 +12,7 @@
     background-color: #FFB5C3;
     background-image: url('../../public/resources/bellWithPlate.png');
 }
-.starting2{
+.maincontainering2{
     padding: 30px;
     width: 400px;
     height: 350px;
@@ -28,7 +28,7 @@
     border: 2px solid white;
 
 }
-.username1{
+.username{
     margin: 20px;
     padding: 15px 40px;
     margin-left: 60px;
@@ -52,7 +52,7 @@
     background-color: white;
     border: 2px solid white;
 }
-.password1{
+.password{
     margin: 20px;
     padding: 15px 40px;
     margin-left: 60px;

@@ -1,6 +1,5 @@
-import React from 'react';
 import './signup.css';
-import {useState} from'react';
+import React,{useState} from'react';
 function Signup(){
     const[name,setName]=useState("");
     const [username,setUsername]=useState("");
@@ -11,7 +10,7 @@ function Signup(){
         if(name != "" && username != "" && email != "" && number !="" &&password != ""){
         let signupinfo=JSON.parse(localStorage.getItem("signup"))||[];
         for(let i=0;i<signupinfo;i++){
-            if(signupinfo[i].username==username && signupinfo[i].password==password){
+            if(signupinfo[i].username===username && signupinfo[i].password===password){
 
             }
         }
@@ -26,13 +25,13 @@ function Signup(){
     return(
         <div id="layout">
             <div>
-                <img className="image1" src="resources/hangingBrownBell.png" alt=""></img>
-                <img className="image2" src="resources/hangingBrownBell.png" alt=""></img>
+                <img className="image1" src="resources/hangingBrownBell.png" alt="mud pot"/>
+                <img className="image2" src="resources/hangingBrownBell.png" alt="mud pot"/>
              </div>
              
-            <div className='starting'>
+            <div className='maincontainering'>
                 
-                <div className='starting1'>
+                <div className='maincontainering1'>
                 <h1 className='h1'>SignUp page</h1>
                     <input type="text" className="name" placeholder='Name' onChange={e=>setName(e.target.value)}/><br></br>
                     <input type="text" className="username" placeholder='UserName'onChange={e=>setUsername(e.target.value)}/><br></br>
@@ -46,4 +45,6 @@ function Signup(){
         </div>
     )
 }
+
+
 export default Signup;

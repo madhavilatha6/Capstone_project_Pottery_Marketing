@@ -1,24 +1,23 @@
 import React, { useState } from 'react';
-import './forgot.css';
+import './Forgot.css';
 
 function Forgot(){
     const [name,setName]=useState("");
     const [number,setNumber]=useState("");
     const [password,setPassword]=useState("");
-    function forgotClick(){
-        if(number =="" ||password ==""){
+    function ForgotClick(){
+        if(number ==="" ||password ===""){
             alert("fill all details");
         }else{
-            let forgotinfo=JSON.parse(localStorage.getItem("signup"))|| [];
+            let Forgotinfo=JSON.parse(localStorage.getItem("signup"))|| [];
             let empty = []
-            if(number==password){
-				for(let i=0;i<forgotinfo.length;i++){
-                    console.log(forgotinfo[i])
-					if(name===forgotinfo[i].username){
-						empty.push({...forgotinfo[i], password})
+            if(number===password){
+				for(let i=0;i<Forgotinfo.length;i++){
+					if(name===Forgotinfo[i].username){
+						empty.push({...Forgotinfo[i], password})
                     }		
                     else{
-                        empty.push(forgotinfo[i]);
+                        empty.push(Forgotinfo[i]);
                     }
 				}
                 localStorage.setItem("signup", JSON.stringify(empty));
@@ -32,22 +31,22 @@ function Forgot(){
     return(
         <div>
             <div>
-                <img className="pic" src="resources/hangingBrownBell.png" alt=""></img>
-                <img className="pic1" src="resources/hangingBrownBell.png" alt=""></img>
+                <img className="hangingbrownbell" src="resources/hangingBrownBell.png" alt="mud pot"/>
+                <img className="hangingbrownbell1" src="resources/hangingBrownBell.png" alt="mud pot"/>
              </div>
              
-            <div className='start'>
+            <div className='maincontainer'>
                 
-                <div className='start1'>
-                <h1 className='h12'>Forgot page</h1>
+                <div className='main-container'>
+                <h1 className='Forgotpage'>Forgot page</h1>
                     <input type="text" value={name}className="name" placeholder='Name'onChange={e=>setName(e.target.value)}/><br></br>
                     <input type="password" value={number} className="number" placeholder='New Password'onChange={e=>setNumber(e.target.value)}/><br></br>
                     <input type="password" vlaue={password}className="password" placeholder='Confirm Password'onChange={e=>setPassword(e.target.value)}/><br></br>
-                    <button className='sub' onClick={forgotClick}>Submit</button>
+                    <button className='sub' onClick={ForgotClick}>Submit</button>
                 </div>
         </div>   
         </div>
     )
-    }
+}
 
 export default Forgot;

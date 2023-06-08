@@ -1,11 +1,11 @@
 
-.starting{
+.maincontainering{
     display: flex;
     margin-top: -5%;
     justify-content: center;
     border-radius: 70px;
 }
-.starting1{
+.maincontainering1{
     padding: 30px;
     width: 550px;
     margin-top: -490px;
@@ -13,7 +13,7 @@
     background-color: #FFB5C3;
     background-image: url('../../public/resources/bellWithPlate.png');
 }
-.starting2{
+.maincontainering2{
     padding: 30px;
     width: 400px;
     height: 350px;
