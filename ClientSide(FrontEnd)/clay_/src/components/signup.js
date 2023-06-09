@@ -29,9 +29,9 @@ function Signup(){
                 <img className="image2" src="resources/hangingBrownBell.png" alt="mud pot"/>
              </div>
              
-            <div className='maincontainering'>
+            <div className='container'>
                 
-                <div className='maincontainering1'>
+                <div className='container1'>
                 <h1 className='h1'>SignUp page</h1>
                     <input type="text" className="name" placeholder='Name' onChange={e=>setName(e.target.value)}/><br></br>
                     <input type="text" className="username" placeholder='UserName'onChange={e=>setUsername(e.target.value)}/><br></br>
