@@ -4,14 +4,15 @@ import Forgot from './components/Forgot';
 import Images from './components/Images';
 import Login from './components/login';
 import Signup from './components/signup';
-
+import About from './components/about';
 function App() {
   return (
     <div className="App">
-      <Images />
+      {/* <Images />
      <Login />
      <Signup />
-      <Forgot />
+      <Forgot /> */}
+      <About />
     </div>
   );
 }

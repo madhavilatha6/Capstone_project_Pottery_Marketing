@@ -111,7 +111,7 @@ function Images(){
                     
                 </div>
                 <div className="seconddiv">
-                     <img className="hangingbell" src="resources/hangingBell.jpg" alt="mud pot"/>
+                     <img className="hangingbell1" src="resources/hangingBell.jpg" alt="mud pot"/>
                      
 
                 </div>
