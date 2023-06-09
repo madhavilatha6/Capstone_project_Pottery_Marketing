@@ -1,0 +1,85 @@
+
+.container{
+    display: flex;
+    margin-top: -5%;
+    justify-content: center;
+    border-radius: 70px;
+}
+.container1{
+    padding: 30px;
+    width: 550px;
+    margin-top: -490px;
+    border-radius: 70px;
+    background-color: #FFB5C3;
+    background-image: url('../../public/resources/bellWithPlate.png');
+}
+.container2{
+    padding: 30px;
+    width: 400px;
+    height: 350px;
+    border-radius: 70px;
+}
+
+.name{
+    margin: 15px;
+    padding: 15px 40px;
+    margin-left: 60px;
+    border-radius: 30px;
+    background-color: white;
+    border: 2px solid white;
+
+}
+.username{
+    margin: 15px;
+    padding: 15px 40px;
+    margin-left: 60px;
+    border-radius: 30px;
+    background-color: white;
+    border: 2px solid white;
+}
+.email{
+    margin: 15px;
+    padding: 15px 40px;
+    margin-left: 60px;
+    border-radius: 30px;
+    background-color: white;
+    border: 2px solid white;
+}
+.number{
+    margin: 15px;
+    padding: 15px 40px;
+    margin-left: 60px;
+    border-radius: 30px;
+    background-color: white;
+    border: 2px solid white;
+}
+.password{
+    margin: 15px;
+    padding: 15px 40px;
+    margin-left: 60px;
+    border-radius: 30px;
+    background-color: white;
+    border: 2px solid white;
+}
+.submit{
+    padding:15px 30px;
+    margin: 10px 0px 0px 130px;
+    border-radius: 30px;
+    background-color: white;
+    border: 2px solid white;
+}
+.image2{
+    margin-left: 1000px;
+}
+.image1{
+  
+}
+.h1{
+    margin-left: 80px;
+}
+.h3{
+    margin-left: 50px;
+}
+span{
+    color:rgb(138, 8, 8);
+}
