@@ -5,6 +5,8 @@ import Images from './components/Images';
 import Login from './components/login';
 import Signup from './components/signup';
 import About from './components/About';
+import Contact from './components/contact';
+
 function App() {
   return (
     <div className="App">
@@ -12,7 +14,8 @@ function App() {
       {/* <Login /> */}
       {/* <Signup /> */}
       {/* <Forgot />  */}
-       <About />
+       {/* <About /> */}
+       <Contact />
     </div>
   );
 }

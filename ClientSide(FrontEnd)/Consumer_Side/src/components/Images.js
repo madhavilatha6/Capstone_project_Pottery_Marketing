@@ -144,7 +144,7 @@ function Images(){
                     <div className='verietiesdesign'></div>
                 </div>
                 <div className='downImages'>
-                    <div className='pottery'></div>
+                    <div className='potterys'></div>
                     <div className='clayPottery'></div>
                     <div className='designPottery'></div>
                 </div>
