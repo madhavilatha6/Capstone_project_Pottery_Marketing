@@ -127,6 +127,29 @@ function Images(){
                 </div> 
 
             </div>
+            <div>
+            <div className='history'>
+
+            </div>
+            <div id='imagesAll'>
+                <h2>Process of</h2>
+                <h2>Making a pot</h2>
+                <div className='wheelPottery'></div>
+                <div className='potone'>
+                    <div className='verietiesbell'></div>
+                    <div className='verietieshanging'></div>
+                </div>
+                <div className='pottwo'>
+                    <div className='verietiespots'></div>
+                    <div className='verietiesdesign'></div>
+                </div>
+                <div className='downImages'>
+                    <div className='pottery'></div>
+                    <div className='clayPottery'></div>
+                    <div className='designPottery'></div>
+                </div>
+            </div>
+            </div>
             <div className='footer1'>
                     <div className='about'>
                         <h4>AboutUs</h4>
