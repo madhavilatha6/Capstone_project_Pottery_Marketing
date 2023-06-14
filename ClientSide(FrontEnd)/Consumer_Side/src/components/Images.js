@@ -150,6 +150,9 @@ function Images(){
                 </div>
             </div>
             </div>
+            {/* <div className="floating-image-container">
+                <img className="floating-image" src="resources/hangingPot.png" alt="Floating Image" />
+            </div> */}
             <div className='footer1'>
                     <div className='about'>
                         <h4>AboutUs</h4>

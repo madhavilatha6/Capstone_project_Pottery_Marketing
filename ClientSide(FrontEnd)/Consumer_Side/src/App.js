@@ -6,6 +6,7 @@ import Login from './components/login';
 import Signup from './components/signup';
 import About from './components/About';
 import Contact from './components/contact';
+import Category from './components/category';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       {/* <Signup /> */}
       {/* <Forgot />  */}
        {/* <About /> */}
-       <Contact />
+       {/* <Contact /> */}
+       <Category />
     </div>
   );
 }
