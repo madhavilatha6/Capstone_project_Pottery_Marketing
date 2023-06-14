@@ -16,11 +16,21 @@ function Category(){
             <div className='categoryStart'>
                 <h3>SortBy:</h3>
                 <select name="cars" id="cars">
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="opel">Opel</option>
-                    <option value="audi">Audi</option>
+                    <option value="volvo">SortByPrice</option>
+                    <option value="saab">LowToHigh</option>
+                    <option value="opel">HighToLow</option>
                 </select>
+                <div className="filter">
+                <h3>FilterBy:</h3>
+                <select name="cars" id="cars">
+                <option value="volvo">FilterByModels</option>
+                    <option value="volvo">CookingPots</option>
+                    <option value="saab">DesignPots</option>
+                    <option value="opel">Flowerpots</option>
+                    <option value="opel">HangingBells</option>
+                    <option value="opel">NaturalPots</option>
+                </select>
+            </div>
             </div>
 
 

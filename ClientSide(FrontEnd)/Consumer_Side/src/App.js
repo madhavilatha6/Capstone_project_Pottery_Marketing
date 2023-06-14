@@ -11,12 +11,12 @@ import Category from './components/category';
 function App() {
   return (
     <div className="App">
-         {/* <Images /> */}
-      {/* <Login /> */}
-      {/* <Signup /> */}
-      {/* <Forgot />  */}
-       {/* <About /> */}
-       {/* <Contact /> */}
+         {/* <Images /> 
+      <Login />
+      <Signup />
+      <Forgot /> 
+       <About />
+       <Contact /> */}
        <Category />
     </div>
   );
