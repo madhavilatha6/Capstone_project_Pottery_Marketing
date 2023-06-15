@@ -1,4 +1,4 @@
-[
+const data=[
     {
         "title": "Sleeves Solid Women Pink Top",
         "avatar": "https://images.express.com/is/image/expressfashion/0086_09610347_0121_f001?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon",
@@ -240,3 +240,6 @@
         "id": "30"
     }
 ]
+// localStorage.setItem("myData", JSON.stringify(data));
+
+export default data;

@@ -4,39 +4,39 @@ function Images(){
     return(
         <div>
             <div>
-                <img className="homepageimage" src="resources/homepage.png" alt="mud pot"/>
+                <img  className="homepageimage" src="resources/hand.png" alt="mud pot"/>
                 <div className="nav">
-                    <div>Home</div>
-                    <div>Category</div>
-                    <div>About Us</div>
+                    <h3>Home</h3>
+                    <h3>Category</h3>
+                    <h3>About Us</h3>
                     <button className="button">Register</button>
                     <button className="button">Add to cart</button>
                 </div>
             <div className='smallPot'>
                     <div className='hangingbrownbellture'>
                         <img className="potteryClass" src="resources/potteryClass.png" alt="mud pot"/>
-                        <h2>Pottery Classes</h2>
+                        <h3>Pottery Classes</h3>
                         <div className='paragraph'>
                         <p>Integer condime condimentum </p><p>condimented dsemeu u finibus</p><p>portturabitur imperdiet.</p>
                         </div>
                     </div>
                     <div className='hangingbrownbellture1'>
                         <img className="designPot" src="resources/designPot.png" alt="mud pot"/>
-                        <h2>Design Process</h2>
+                        <h3>Design Process</h3>
                         <div className='paragraph'>
                         <p>Integer condime condimentum </p><p>condimented dsemeu u finibus</p><p>portturabitur imperdiet.</p>
                         </div>
                     </div>
                     <div className='hangingbrownbellture2'>
                         <img className="giftCart" src="resources/giftCart.png" alt="mud pot"/>
-                        <h2>Gift Cards</h2>
+                        <h3>Gift Cards</h3>
                         <div className='paragraph'>
                         <p>Integer condime condimentum </p><p>condimented dsemeu u finibus</p><p>portturabitur imperdiet.</p>
                         </div>
                     </div>
                     <div className='hangingbrownbellture3'>
                         <img className="potteryWheel" src="resources/potteryWheel.png" alt="mud pot"/>
-                        <h2>Pottery Wheel</h2>
+                        <h3>Pottery Wheel</h3>
                         <div className='paragraph'>
                         <p>Integer condime condimentum </p><p>condimented dsemeu u finibus</p><p>portturabitur imperdiet.</p>
                         </div>
@@ -132,21 +132,47 @@ function Images(){
 
             </div>
             <div id='imagesAll'>
-                <h2>Process of</h2>
+                <h2>Our Gallery</h2>
                 <h2>Making a pot</h2>
-                <div className='wheelPottery'></div>
-                <div className='potone'>
-                    <div className='verietiesbell'></div>
-                    <div className='verietieshanging'></div>
-                </div>
-                <div className='pottwo'>
-                    <div className='verietiespots'></div>
-                    <div className='verietiesdesign'></div>
-                </div>
-                <div className='downImages'>
-                    <div className='potterys'></div>
-                    <div className='clayPottery'></div>
-                    <div className='designPottery'></div>
+                <div id='allpics'>
+                    <div className='wheelPottery2'>
+                        <img src="resources/flowerpot1.jpg" alt="mud pot"/>
+                    </div>
+                    <div className='potone'>
+                        <div className='verietiesbell2'>
+                            <img src="resources/vessel.jpg" alt="mud pot"/>
+                        </div>
+                        <div className='verietieshanging2'>
+                            <img src="resources/bowel1.jpg" alt="mud pot"/>
+                        </div>
+                    </div>
+                    <div className='pottwo'>
+                        <div className='verietiespots2'>
+                            <img src="resources/bowel2.jpg" alt="mud pot"/>
+                        </div>
+                        <div className='verietiesdesign2'>
+                            <img src="resources/decorativePot.jpg" alt="mud pot"/>
+                        </div>
+                    </div>
+                     <div className='wheelPottery1'>
+                        <img src="resources/tulasi.jpg" alt="mud pot"/>
+                    </div>
+                    <div className='potone'>
+                        <div className='verietiesbell1'>
+                            <img src="resources/coinbank.jpg" alt="mud pot"/>
+                        </div>
+                        <div className='verietieshanging1'>
+                            <img src="resources/designbowel.jpg" alt="mud pot"/>
+                        </div>
+                    </div>
+                    <div className='pottwo'>
+                        <div className='verietiespots1'>
+                            <img src="resources/wallhanging.jpg" alt="mud pot"/>
+                        </div>
+                        <div className='verietiesdesign1'>
+                            <img src="resources/fishbowl.jpg" alt="mud pot"/>
+                        </div>
+                    </div>
                 </div>
             </div>
             </div>

@@ -1,5 +1,21 @@
 import "./category.css";
+import data from "./flowerPots";
 function Category(){
+    // const storedData = JSON.parse(localStorage.getItem("myData"));
+    // console.log(storedData);
+    localStorage.setItem("myData", JSON.stringify(data));
+    var display=document.querySelector(".display");
+    var viewBooks=JSON.parse(localStorage.getItem("bookDetails"));
+    if(viewBooks){
+        for(var i=0;i<viewBooks.length;i++){
+            let title = document.createElement("h2");
+			title.textContent =  "BookName:"+viewBooks[i].title;
+            display.append(title);
+        }
+    }
+
+
+
     return(
         <div>
             <div className="navpage">
@@ -32,6 +48,7 @@ function Category(){
                 </select>
             </div>
             </div>
+            <div className="display"></div>
 
 
 
