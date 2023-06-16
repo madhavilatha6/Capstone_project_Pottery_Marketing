@@ -4,7 +4,7 @@ function Images(){
     return(
         <div>
             <div>
-                <img  className="homepageimage" src="resources/hand.png" alt="mud pot"/>
+                <img className="homepageimage" src="resources/hand.png" alt="mud pot"/>
                 <div className="nav">
                     <h3>Home</h3>
                     <h3>Category</h3>
@@ -176,9 +176,6 @@ function Images(){
                 </div>
             </div>
             </div>
-            {/* <div className="floating-image-container">
-                <img className="floating-image" src="resources/hangingPot.png" alt="Floating Image" />
-            </div> */}
             <div className='footer1'>
                     <div className='about'>
                         <h4>AboutUs</h4>
