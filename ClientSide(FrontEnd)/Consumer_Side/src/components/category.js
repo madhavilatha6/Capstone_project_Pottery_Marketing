@@ -153,12 +153,15 @@ function Category(){
         
             <div className="displayVideos">
                {
-                viewoneconcepts?.map(({conceptName,title,rating}) => (
-                    <div className="div" key={conceptName}>
-                    <p className="colour">{conceptName}</p>
-                    <p>{title}</p>
-                    <p>{rating}</p>
-                    </div>
+                viewoneconcepts?.map(({avatar,title,price,rating}) => (
+                
+                        <div className="div">
+                            <img src={avatar} alt=''/>
+                            <h4>{title}</h4>
+                            <h4>{price}</h4>
+                            <p>{rating}</p>
+                            <button className="add">Add To Cart</button>
+                        </div>
                     
                 ))
                 }

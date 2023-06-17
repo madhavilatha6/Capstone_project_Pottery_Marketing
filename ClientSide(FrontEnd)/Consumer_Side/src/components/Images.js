@@ -4,7 +4,7 @@ function Images(){
     return(
         <div>
             <div>
-                <img className="homepageimage" src="resources/hand.png" alt="mud pot"/>
+                <img className="homepageimage" src="https://images.herzindagi.info/image/2019/Feb/mitti-ke-bartan-article.jpg" alt="mud pot"/>
                 <div className="nav">
                     <h3>Home</h3>
                     <h3>Category</h3>
@@ -12,6 +12,7 @@ function Images(){
                     <button className="button">Register</button>
                     <button className="button">Add to cart</button>
                 </div>
+                <div></div>
             <div className='smallPot'>
                     <div className='hangingbrownbellture'>
                         <img className="potteryClass" src="resources/potteryClass.png" alt="mud pot"/>
@@ -120,7 +121,7 @@ function Images(){
                  
                      <img className="hangingpot" src="resources/hangingPot.png" alt="mud pot"/>
                 <div className="hangingpottext">
-                    <p>Welcome to</p>
+                    <h3>Welcome to</h3>
                     <b>Pottery Shop</b>
                     <p>Pottery is the ceramic material which makes up potteryware.</p>
                     <button>ReadMore</button>

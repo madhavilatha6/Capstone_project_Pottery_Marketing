@@ -8,6 +8,7 @@ import About from './components/About';
 import Contact from './components/contact';
 import Category from './components/category';
 import Checkout from './components/checkout';
+import NextCategory from './components/category_next';
 
 function App() {
   return (
@@ -18,8 +19,9 @@ function App() {
         {/* <Forgot /> */}
        {/* <About /> */}
        {/* <Contact />  */}
-       <Category />
+       {/* <Category /> */}
        {/* <Checkout /> */}
+       <NextCategory />
     </div>
   );
 }
