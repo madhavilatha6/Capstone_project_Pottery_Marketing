@@ -1,3 +1,4 @@
+import React from 'react';
 
 import './App.css';
 import Forgot from './components/Forgot';
@@ -7,10 +8,9 @@ import Signup from './components/signup';
 import About from './components/About';
 import Contact from './components/contact';
 import Category from './components/category';
-import Checkout from './components/checkout';
-import NextCategory from './components/category_next';
 
 function App() {
+  
   return (
     <div className="App">
          {/* <Images />  */}
@@ -19,11 +19,13 @@ function App() {
         {/* <Forgot /> */}
        {/* <About /> */}
        {/* <Contact />  */}
-       {/* <Category /> */}
-       {/* <Checkout /> */}
-       <NextCategory />
+       <Category />
+  
+  
     </div>
   );
 }
 
 export default App;
+
+

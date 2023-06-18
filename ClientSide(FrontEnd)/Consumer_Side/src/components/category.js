@@ -153,7 +153,7 @@ function Category(){
         
             <div className="displayVideos">
                {
-                viewoneconcepts?.map(({avatar,title,price,rating}) => (
+                viewoneconcepts.map(({avatar,title,price,rating}) => (
                 
                         <div className="div">
                             <img src={avatar} alt=''/>
@@ -209,3 +209,4 @@ function Category(){
             }
 
 export default Category;
+
