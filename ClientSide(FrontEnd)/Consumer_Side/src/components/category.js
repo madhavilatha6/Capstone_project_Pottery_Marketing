@@ -1,6 +1,8 @@
 import "./category.css";
 // import data from "./flowerPots";
 function Category(){
+
+    // function click(){
     
     const ConceptsData = [
             {
@@ -112,6 +114,7 @@ function Category(){
                 rating: "★★★★☆",
             }
         ]
+    // }
     
     localStorage.setItem("video", JSON.stringify(ConceptsData));
     let viewoneconcepts = JSON.parse(localStorage.getItem("video"));
@@ -142,7 +145,7 @@ function Category(){
                 <h3>FilterBy:</h3>
                 <select name="cars" id="cars">
                 <option value="volvo">FilterByModels</option>
-                    <option value="volvo">CookingPots</option>
+                    <option value="volvo"><a href="../components/About.js">CookingPots</a></option>
                     <option value="saab">DesignPots</option>
                     <option value="opel">Flowerpots</option>
                     <option value="opel">HangingBells</option>
@@ -209,4 +212,6 @@ function Category(){
             }
 
 export default Category;
+
+
 
