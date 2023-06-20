@@ -8,6 +8,7 @@ import Signup from './components/signup';
 import About from './components/About';
 import Contact from './components/contact';
 import Category from './components/category';
+import Checkout from './components/checkout';
 
 function App() {
   
@@ -19,8 +20,8 @@ function App() {
         {/* <Forgot /> */}
        {/* <About /> */}
        {/* <Contact />  */}
-       <Category />
-  
+       {/* <Category /> */}
+      <Checkout />
   
     </div>
   );

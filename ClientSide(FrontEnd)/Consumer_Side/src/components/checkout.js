@@ -1,181 +1,100 @@
-// import React, { useState } from 'react';
-// import './checkout.css'
+import './checkout.css';
 
-// const Checkout = () => {
-//   const [name, setName] = useState('');
-//   const [address, setAddress] = useState('');
-//   const [paymentMethod, setPaymentMethod] = useState('');
+function Checkout(){
+  return(
+    <div className='checkout'>
+      <h1>1.Contact Details</h1>
+      <div className='fullname'>
+        <div>
+            <label for="test">First Name</label><br></br>
+            <input type='text' placeholder='FirstName'/>
+        </div>
+        <div className='last'>
+            <label for="test">Last Name</label><br></br>
+            <input type='text' placeholder='LastName'/>
+        </div>
+      </div>
+      <div className='lastname'>
+        <div>
+            <label for="test">Email Address</label><br></br>
+            <input type='email' placeholder='Email'/>
+        </div>
+        <div className='last'>
+            <label for="test">Mobile Number</label><br></br>
+            <input type='number' placeholder='MobileNumber'/>
+        </div>
+      </div>
+<hr></hr>
 
-//   const handleNameChange = (e) => {
-//     setName(e.target.value);
-//   };
+      <h1>2.Delivery Address</h1>
+      <div className='fullname'>
+        <div>
+            <label for="test">Country</label><br></br>
+            <input type='text' placeholder='Country'/>
+        </div>
+        <div className='last'>
+            <label for="test">State</label><br></br>
+            <input type='text' placeholder='State'/>
+        </div>
+      </div>
+      <div className='lastname'>
+        <div>
+            <label for="test">Street Address</label><br></br>
+            <input type='text' placeholder='Address'/>
+        </div>
+        <div className='last'>
+            <label for="test">Pincode</label><br></br>
+            <input type='text' placeholder='Pincode'/>
+        </div>
+      </div>
+      <hr></hr>
 
-//   const handleAddressChange = (e) => {
-//     setAddress(e.target.value);
-//   };
-
-//   const handlePaymentMethodChange = (e) => {
-//     setPaymentMethod(e.target.value);
-//   };
-
-//   const handleCheckout = () => {
-//     // Save the checkout details to local storage
-//     localStorage.setItem('name', name);
-//     localStorage.setItem('address', address);
-//     localStorage.setItem('paymentMethod', paymentMethod);
-
-//     // Perform additional actions like submitting the order to the server, etc.
-
-//     // Clear the form fields
-//     setName('');
-//     setAddress('');
-//     setPaymentMethod('');
-//   };
-
-//   return (
-//     <div>
-//       <h2>Checkout</h2>
-//       <form>
-//         <label>
-//           Name:
-//           <input type="text" value={name} onChange={handleNameChange} />
-//         </label>
-//         <br />
-//         <label>
-//           Address:
-//           <input type="text" value={address} onChange={handleAddressChange} />
-//         </label>
-//         <br />
-//         <label>
-//           Payment Method:
-//           <select value={paymentMethod} onChange={handlePaymentMethodChange}>
-//             <option value="">Select</option>
-//             <option value="credit-card">Credit Card</option>
-//             <option value="paypal">PayPal</option>
-//           </select>
-//         </label>
-//         <br />
-//         <button type="button" onClick={handleCheckout}>
-//           Checkout
-//         </button>
-//       </form>
-//     </div>
-//   );
-// };
-
-// export default Checkout;
-
-
-// import React, { useState } from 'react';
-
-// const ProductDetails = () => {
-//   const [productName, setProductName] = useState('');
-//   const [quantity, setQuantity] = useState(1);
-
-//   const handleProductNameChange = (e) => {
-//     setProductName(e.target.value);
-//   };
-
-//   const handleQuantityChange = (e) => {
-//     setQuantity(e.target.value);
-//   };
-
-//   const handleBuyNow = () => {
-//     // Validate the product selection and user input
-//     if (!productName || quantity <= 0) {
-//       alert('Please select a product and enter a valid quantity.');
-//       return;
-//     }
-
-//     // Create an order or cart object
-//     const order = {
-//       productName,
-//       quantity,
-//     };
-
-//     // Send the order to the server for further processing
-//     // You can use fetch() or any other library to make an API call
-//     fetch('/api/create-order', {
-//       method: 'POST',
-//       headers: {
-//         'Content-Type': 'application/json',
-//       },
-//       body: JSON.stringify(order),
-//     })
-//       .then((response) => response.json())
-//       .then((data) => {
-//         // Handle the server's response
-//         // You can display a success message or redirect to a payment gateway
-//         console.log('Order created:', data);
-//         alert('Order created successfully!');
-//       })
-//       .catch((error) => {
-//         // console.error('Error creating order:', error);
-//         alert('An error occurred while processing your order. Please try again.');
-//       });
-//   };
-
-//   return (
-//     <div>
-//       <h2>Product Details</h2>
-//       <form>
-//         <label>
-//           Product Name:
-//           <input type="text" value={productName} onChange={handleProductNameChange} />
-//         </label>
-//         <br />
-//         <label>
-//           Quantity:
-//           <input type="number" value={quantity} onChange={handleQuantityChange} />
-//         </label>
-//         <br />
-//         <button type="button" onClick={handleBuyNow}>
-//           Buy Now
-//         </button>
-//       </form>
-//     </div>
-//   );
-// };
-
-// export default ProductDetails;
+     <h1>3.Delivery Method</h1>
+      <div className='checkbox'>
+      <input type="checkbox" id="delivery"/>
+      <label for="vehicle1" id='standard'><p id='stand'>Standard Delivery</p></label><br></br>
+      </div>
+      <div className='checkbox'>
+      <input type="checkbox" id="delivery"/>
+      <label for="vehicle1" id='standard'><p id='stand'>Next Day Delivery
+  </p></label><br></br>
+      </div>
+      <div className='checkbox'>
+      <input type="checkbox" id="delivery"/>
+      <label for="vehicle1" id='standard'><p id='stand'>
+	Named Day
+	</p></label><br></br> 
+      </div>
+      <button>Confirm delivery method</button>
+      <hr></hr>
 
 
 
 
-
-import React, { useEffect, useState } from 'react';
-
-const ProductList = () => {
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    fetchData();
-  }, []);
-
-  const fetchData = async () => {
-    try {
-      const response = await fetch('/api/products');
-      if (response.ok) {
-        const data = await response.json();
-        setProducts(data);
-      } else {
-        throw new Error('Failed to fetch products');
-      }
-    } catch (error) {
-      console.error('Error fetching products:', error);
-    }
-  };
-
-  return (
-    <div>
-      <h2>Product List</h2>
-      <ul>
-        {products.map((product) => (
-          <li key={product.id}>{product.name}</li>
-        ))}
-      </ul>
+      <h1>4.Payment Details</h1>
+      <div className='fullname'>
+        <div>
+            <label for="test">Name on Card</label><br></br>
+            <input type='text' placeholder='Name on Card'/>
+        </div>
+        <div>
+            <label for="test">Card Number</label><br></br>
+            <input type='number' placeholder='Name on Card'/>
+        </div>
+        </div>
+        <div className='fullname'>
+        <div>
+            <label for="test">Name on Card</label><br></br>
+            <input type='text' placeholder='Name on Card' id=''/>
+            <input type='text' placeholder='Name on Card'/>
+        </div>
+        <div>
+            <label for="test">Card Number</label><br></br>
+            <input type='number' placeholder='Name on Card'/>
+        </div>
+        </div>
     </div>
-  );
-};
+  )
+}
 
-export default ProductList;
+export default Checkout;
