@@ -1,0 +1,216 @@
+#navbar{
+    border: 2px solid white;
+    padding: 40px;
+    /* background-color: aliceblue; */
+}
+.color{
+    /* background-color: rgb(171, 172, 172); */
+    background-color: rgb(243, 194, 47);
+}
+.categories{
+    /* border: 2px solid green; */
+    padding: 50px;
+    margin: 40px;
+    margin-top: 60px;
+}
+.hover{
+    background-color: rgb(243, 194, 47);
+    height: 140px;
+    padding: 7px;
+    margin-top: -10px;
+}
+
+.design{
+    /* border: 2px solid green; */
+    padding:50px;
+    border-radius: 120px;
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+}
+.flower{
+    /* border: 2px solid green; */
+    padding:50px;
+    border-radius: 120px;
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+}
+.flower > img{
+    width: 200px;
+    height: 200px;
+    border-radius: 120px;
+    margin-left: -60px;
+    margin-top: -30px;
+}
+.flower:hover {
+    transform: scale(1.2, 1.2);
+  
+}
+.flower:hover::after {
+    opacity: 1;
+   
+  }
+.design > img{
+    width: 200px;
+    height: 200px;
+    border-radius: 120px;
+    margin-left: -60px;
+    margin-top: -30px;
+}
+.design:hover {
+    transform: scale(1.2, 1.2);
+  
+}
+.design:hover::after {
+    opacity: 1;
+   
+  }
+.hangingbells > img{
+    width: 200px;
+    height: 200px;
+    border-radius: 120px;
+    margin-left: -60px;
+    margin-top: -30px;
+}
+.hangingbells:hover {
+    transform: scale(1.2, 1.2);
+  
+}
+.hangingbells:hover::after {
+    opacity: 1;
+   
+  }
+.naturalpots >img{
+    width: 200px;
+    height: 200px;
+    border-radius: 120px;
+    margin-left: -40px;
+    margin-top: -30px;
+}
+.naturalpots:hover {
+    transform: scale(1.2, 1.2);
+  
+}
+.naturalpots:hover::after {
+    opacity: 1;
+   
+  }
+.animaldesign > img{
+    width: 200px;
+    height: 200px;
+    border-radius: 120px;
+    margin-left: -40px;
+    margin-top: -30px;
+}
+.animaldesign:hover {
+    transform: scale(1.2, 1.2);
+  
+}
+.animaldesign:hover::after {
+    opacity: 1;
+   
+  }
+.hangingbells{
+    /* border: 2px solid green; */
+    padding:50px;
+    border-radius: 120px;
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+}
+.naturalpots{
+    /* border: 2px solid green; */
+    padding:50px;
+    border-radius: 120px;
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+}
+.animaldesign{
+    /* border: 2px solid green; */
+    padding:50px;
+    border-radius: 120px;
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+}
+.CookingPot{
+    /* border: 2px solid green; */
+    padding:50px;
+    border-radius: 120px;
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+}
+.categories{
+    display: flex;
+    margin-top: -30px;
+}
+#searchbar{
+    margin-left: 400px;
+}
+#search{
+    border: 1px solid black;
+    margin-left: -10px;
+}
+.display{
+    border: 2px solid white;
+   width: 300px;
+   margin-top: 40px;
+   margin-left: 40px;
+    text-align: center;
+    border: 2px solid  rgb(243, 194, 47);
+}
+.display img{
+    width: 300px;
+    height: 200px;
+}
+#pictires_display{
+    display: flex;
+    /* border: 2px solid green; */
+    flex-wrap: wrap;
+    /* margin-left: 50px; */
+}
+
+.array{
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 2px solid green; */
+    background-color: aliceblue;
+}
+.text-align{
+    /* display: flex;
+    justify-content: space-evenly;
+    margin-left: -150px; */
+    font-size: 20px;
+}
+.one{
+    margin-left: 130px;
+    margin-top: -40px;
+}
+.two{
+    margin-left: 380px;
+    margin-top: -40px;
+}
+.three{
+    margin-left: 44%;
+    margin-top: -40px;
+}
+.four{
+    margin-left: 62%;
+    margin-top: -40px;
+}
+.five{
+    margin-left: 79%;
+    margin-top: -40px;
+}
+.colors{
+    border: 2px solid white;
+    padding: 30px;
+    background-color: aliceblue;
+}
+.clearsearch{
+    margin-left: 550px;
+    color: rgb(255, 0, 0);
+}

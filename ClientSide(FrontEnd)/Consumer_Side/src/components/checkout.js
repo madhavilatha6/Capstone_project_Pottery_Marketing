@@ -85,7 +85,7 @@ function Checkout(){
         <div className='fullname'>
         <div>
             <label for="test">Name on Card</label><br></br>
-            <input type='text' placeholder='Name on Card' id=''/>
+            <input type='text' placeholder='Name on Card' id/>
             <input type='text' placeholder='Name on Card'/>
         </div>
         <div>

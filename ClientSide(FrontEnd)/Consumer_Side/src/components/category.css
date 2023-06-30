@@ -14,10 +14,14 @@ p{
     color:black;
 }
 .buttonpage{
-    padding: 10px;
+    padding: 8px;
     margin-top: -10px;
     border-radius: 25px;
 }
+/* .searchBar{
+    border: 2px solid red;
+    width:800px;
+} */
 .footerpage{
     background-color: rgb(189, 188, 188);
     height: 40%;
@@ -61,19 +65,7 @@ height: 400px;
 margin-left: 260px;
 margin-top: -80px;
 }
-.searchBox{
-    border: 2px solid rgb(189, 188, 188);
-    padding: 20px;
-    margin: 30px 400px 10px 400px;
-    width: 300px;
-}
-.barSearch{
-    border: 2px solid rgb(189, 188, 188);
-    height: 53px;
-    width: 80px;
-    margin-top: -67px;
-    margin-left: 750px;
-}
+
 .categoryStart{
     border: 2px solid rgb(189, 188, 188);
     width: 300px;
@@ -124,4 +116,8 @@ h3{
     background-color:rgb(189, 188, 188);
     border: 1px solid rgb(189, 188, 188);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.navbar{
+    border: 2px solid red;
 }

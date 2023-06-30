@@ -54,13 +54,13 @@ function Category(){
                 rating: "★★★★☆",
             },
             {
-                title: "Wall Hanging",
+                title: "WallHanging",
                 avatar: "https://leadwinner.com/shilparamam2/images2/tera/9.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
                 price: "200.00",
                 rating: "★★★★☆",
             },
             {
-                title: "Decorative Bell",
+                title: "DecorativeBell",
                 avatar: "https://leadwinner.com/shilparamam2/images2/tera/10.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
                 price: "250.00",
                 rating: "★★★★☆",
