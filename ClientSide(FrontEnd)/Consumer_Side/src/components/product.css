@@ -211,6 +211,36 @@
     background-color: aliceblue;
 }
 .clearsearch{
-    margin-left: 550px;
+    margin-left: 400px;
     color: rgb(255, 0, 0);
 }
+#sorting{
+    margin-left: 50%;
+    margin-top: -400px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.rating {
+    display: inline-block;
+  }
+  
+  .rating input {
+    display: none;
+  }
+  
+  .rating label {
+    float: right;
+    color: grey;
+    cursor: pointer;
+  }
+  
+  .rating label:before {
+    content: "\2605";
+    padding-right: 5px;
+  }
+  
+  .rating input:checked ~ label {
+    color: orange;
+  }
+  

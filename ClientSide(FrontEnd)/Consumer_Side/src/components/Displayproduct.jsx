@@ -24,12 +24,31 @@ const Displayproduct = () => {
         })
     }
 
+    const sortData = (data) =>{
+        fetch(`http://localhost:5050/sort/${data}`).then((res)=>{
+            return res.json();
+        }).then((res)=>{
+            setPotteryData(res);
+            console.log(res);
+        })
+    }
 
       
         const handleInputChange = (event) => {
           setInputValue(event.target.value);
         };
 
+
+        const [rating, setRating] = useState(0);
+
+        const handleRatingClick = (value) => {
+          if (value === rating) {
+
+            setRating(0);
+          } else {
+            setRating(value);
+          }
+        }
     return (
     
     <div>
@@ -44,6 +63,11 @@ const Displayproduct = () => {
                         <input id="searchbar" type="text" placeholder="Search" value={inputValue} onChange={handleInputChange} />
                         <button id="search" onClick={searchProductData}>search</button>
                         <h4 className="clearsearch" onClick={PotteryProductData}>ClearSearch</h4>
+
+                        <select name="cars" id="sorting" onChange={(e) => sortData(e.target.value)}>
+                            <option value="asc">LowToHigh</option>
+                            <option value="desc">HighToLow</option>
+                        </select>
                     </div>
                    
                     <div className="categories">
@@ -78,16 +102,22 @@ const Displayproduct = () => {
         potteryData.map(({category_image,category_name,category_price,category_rating})=><div id="pictires_display">
             <div className="display">
                 <div>
-                <img src={category_image} alt="" />
+                    <img src={category_image} alt="" />
                 </div>
                 <div className="hover">
-                <h4>{category_name}</h4>
-                <h4>{category_price}</h4>
-                <h4>{category_rating}</h4>
+                    <h4>{category_name}</h4>
+                    <h4>{category_price}</h4>
+                    <h4>{category_rating}</h4>
+                </div>
+                <div>
+                    {[1, 2, 3, 4, 5].map((value) => (
+                    <span key={value} onClick={() => handleRatingClick(value)} style={{ cursor: 'pointer', color: value <= rating ? 'gold' : 'gray' }}>★</span>
+                    ))}
                 </div>
             </div>
-            </div>
+        </div>
         )
+    
        }
      
     </div>
@@ -103,3 +133,6 @@ export default Displayproduct;
 // write a fucntion for calling the api
 // pass input value while calling the api
 // display the data accordingly
+//modify the search api 
+//if the user search with a half text
+//result should came
