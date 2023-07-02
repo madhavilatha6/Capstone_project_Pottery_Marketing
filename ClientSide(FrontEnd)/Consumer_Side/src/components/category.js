@@ -18,13 +18,13 @@ function Category(){
                 rating: "★★★★☆",
             },
             {
-                title: "Bowel",
+                title: "Boul",
                 avatar: "https://leadwinner.com/shilparamam2/images2/tera/3.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
                 price: "450.00",
                 rating: "★★★★☆",
             },
             {
-                title: "Bowel",
+                title: "Boul",
                 avatar: "https://leadwinner.com/shilparamam2/images2/tera/4.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
                 price: "280.00",
                 rating: "★★★★☆",
@@ -36,7 +36,7 @@ function Category(){
                 rating: "★★★★☆",
             },
             {
-                title: "Bowel",
+                title: "Boul",
                 avatar: "https://leadwinner.com/shilparamam2/images2/tera/6.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
                 price: "200.00",
                 rating: "★★★★☆",
@@ -66,7 +66,7 @@ function Category(){
                 rating: "★★★★☆",
             },
             {
-                title: "Bowel",
+                title: "Boul",
                 avatar: "https://leadwinner.com/shilparamam2/images2/tera/11.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
                 price: "350.00",
                 rating: "★★★★☆",

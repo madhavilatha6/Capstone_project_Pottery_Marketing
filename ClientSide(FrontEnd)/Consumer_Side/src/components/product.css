@@ -5,7 +5,7 @@
 }
 .color{
     /* background-color: rgb(171, 172, 172); */
-    background-color: rgb(243, 194, 47);
+    /* background-color: rgb(243, 194, 47); */
 }
 .categories{
     /* border: 2px solid green; */
@@ -37,8 +37,8 @@
     height: 100px;
 }
 .flower > img{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 120px;
     margin-left: -60px;
     margin-top: -30px;
@@ -52,8 +52,8 @@
    
   }
 .design > img{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 120px;
     margin-left: -60px;
     margin-top: -30px;
@@ -67,8 +67,8 @@
    
   }
 .hangingbells > img{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 120px;
     margin-left: -60px;
     margin-top: -30px;
@@ -82,8 +82,8 @@
    
   }
 .naturalpots >img{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 120px;
     margin-left: -40px;
     margin-top: -30px;
@@ -97,8 +97,8 @@
    
   }
 .animaldesign > img{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 120px;
     margin-left: -40px;
     margin-top: -30px;
@@ -147,12 +147,19 @@
     display: flex;
     margin-top: -30px;
 }
-#searchbar{
-    margin-left: 400px;
+#bar{
+    margin-left: 100px;
+    margin-top: -400px;
+    /* border: 3px solid gray; */
+    border: 2px solid  rgb(243, 194, 47);
 }
-#search{
-    border: 1px solid black;
+#searchdata{
+    /* border: 1px solid black; */
     margin-left: -10px;
+    padding: 10px;
+    width: 100px;
+    margin-top: 60px;
+    border: 2px solid  rgb(243, 194, 47);
 }
 .display{
     border: 2px solid white;
@@ -160,7 +167,7 @@
    margin-top: 40px;
    margin-left: 40px;
     text-align: center;
-    border: 2px solid  rgb(243, 194, 47);
+    /* border: 2px solid  rgb(243, 194, 47); */
 }
 .display img{
     width: 300px;
@@ -186,39 +193,68 @@
     font-size: 20px;
 }
 .one{
-    margin-left: 130px;
-    margin-top: -40px;
+    margin-left: 120px;
+    margin-top: -120px;
 }
 .two{
-    margin-left: 380px;
+    margin-left: 360px;
     margin-top: -40px;
 }
 .three{
-    margin-left: 44%;
+    margin-left: 42%;
     margin-top: -40px;
 }
 .four{
-    margin-left: 62%;
+    margin-left: 60%;
     margin-top: -40px;
 }
 .five{
-    margin-left: 79%;
+    margin-left: 77%;
     margin-top: -40px;
 }
-.colors{
+#colors{
     border: 2px solid white;
-    padding: 30px;
-    background-color: aliceblue;
+    padding: 1px;
+    margin-top: -100px;
+    /* background-color: aliceblue; */
+    /* border: 2px solid  rgb(243, 194, 47); */
 }
-.clearsearch{
-    margin-left: 400px;
-    color: rgb(255, 0, 0);
+#colors > #bar{
+    width: 350px;
+    height: 40px;
+    /* border: 3px solid gray; */
 }
-#sorting{
-    margin-left: 50%;
+#colors > #searchdata{
+    width: 100px;
+    height: 40px;
+    /* margin-top: 60px; */
+} 
+input{
+    /* border: 3px solid whit; */
+    border: 2px solid  rgb(243, 194, 47);
+}
+/* #colors > select{
+    margin-top: -200px;
+} */
+.clearsearch >img{
+    /* margin-left: 240px; */
     margin-top: -400px;
-    padding: 10px;
+    color: rgb(255, 0, 0);
+    width: 30px;
+    height: 30px;
+}
+#wrong{
+    width: 30px;
+    height: 30px; 
+    margin-left: -180px;
+    margin-top: -400px;
+}
+.sorting{
+    /* margin-left: 50%; */
+    /* margin-top: -600px; */
+    padding: 10px 20px;
     font-size: 20px;
+
 }
 
 .rating {
@@ -243,4 +279,30 @@
   .rating input:checked ~ label {
     color: orange;
   }
+  #lowhigh{
+    margin-top: -70px;
+    margin-left: 50%;
+    border-radius: 30px;
+    /* border: 2px solid  rgb(243, 194, 47); */
+  }
+  select{
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 30px;
+    border: 2px solid  rgb(243, 194, 47);
+  }
+  #category{
+    margin-top: -45px;
+    margin-left: 70%;
+    border-radius: 30px;
+    /* border: 2px solid  rgb(243, 194, 47); */
+  }
+  #category > select{
+    border: 2px solid  rgb(243, 194, 47);
+  }
   
+  #navbar{
+    /* border: 2px solid red; */
+    padding: 50px;
+    margin-top: 60px;
+  }

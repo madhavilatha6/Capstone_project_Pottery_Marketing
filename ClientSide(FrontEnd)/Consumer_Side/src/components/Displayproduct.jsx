@@ -3,6 +3,8 @@ import "./product.css";
 const Displayproduct = () => {
         const [inputValue, setInputValue] = useState('');
         const [potteryData,setPotteryData] = useState([]);
+        const [color, setColor] = useState("gray");
+        const [value, setValue] = useState(1);
     useEffect(()=>{
         PotteryProductData();
     },[])
@@ -38,39 +40,28 @@ const Displayproduct = () => {
           setInputValue(event.target.value);
         };
 
+        function clearData(){
+            setInputValue("");
+        }
 
         const [rating, setRating] = useState(0);
 
-        const handleRatingClick = (value) => {
-          if (value === rating) {
-
-            setRating(0);
-          } else {
-            setRating(value);
-          }
+        const handleColorClick = (value) => {
+            setValue(value);
+            for(let i = 1; i <= value; i++){
+                const backgroundTemp = {
+                    backgroundColor :"gold"
+                }
+                document.querySelector(`.starStyle${i}`).style.color = "gold";
+            }
+            setColor("gold");
+            // console.log(data);
         }
     return (
     
     <div>
         <div className="color">
-
-       
-       <header>
-                <nav>
-                    <div id="navbar"></div>
-
-                    <div className="colors">
-                        <input id="searchbar" type="text" placeholder="Search" value={inputValue} onChange={handleInputChange} />
-                        <button id="search" onClick={searchProductData}>search</button>
-                        <h4 className="clearsearch" onClick={PotteryProductData}>ClearSearch</h4>
-
-                        <select name="cars" id="sorting" onChange={(e) => sortData(e.target.value)}>
-                            <option value="asc">LowToHigh</option>
-                            <option value="desc">HighToLow</option>
-                        </select>
-                    </div>
-                   
-                    <div className="categories">
+        <div className="categories">
                         <div className="design">
                             <img src="https://leadwinner.com/shilparamam2/images2/tera/3.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
                         </div>
@@ -95,11 +86,49 @@ const Displayproduct = () => {
                         <p className="four">Natural Pot</p>
                         <p className="five">Cooking Pot</p>
                     </div>
-                </nav>
-       </header>
+       
+       <header>
+                <nav>
+                    <div id="navbar">
+
+                    <div id="colors">
+                        <input id="bar" type="text" placeholder="Search" value={inputValue} onChange={handleInputChange} />
+                        {/* <div onClick={clearData()}>clear</div> */}
+                        <button id="searchdata" onClick={searchProductData}>search</button>
+                        <img onClick={clearData} id="wrong"src="https://tse4.mm.bing.net/th?id=OIP.5QYvJ6lCh-_pQ0AeWcpOfQHaHa&pid=Api&P=0&h=180" alt="" />
+                        
+                    </div>
+                             
+                
+       
+        <div id="lowhigh">
+                <select name="cars" onChange={(e) => sortData(e.target.value)}>
+                    <option>Sort By Price</option>
+                    <option value="asc">LowToHigh</option>
+                    <option value="desc">HighToLow</option>
+                </select>
+        </div>
+
+        <div id="category">
+                <select>
+                    <option>Click More Items</option>
+                    <option></option>
+                    <option></option>
+                </select>
+        </div>
+        </div>
+        </nav>
+        </header>
+                   
+                    
+           
        <div className="array">
        {
-        potteryData.map(({category_image,category_name,category_price,category_rating})=><div id="pictires_display">
+        potteryData?.filter(function(element){
+            if(element.category_name.toLocaleLowerCase().includes(inputValue.toLocaleLowerCase())){
+                return potteryData;
+            }
+        })?.map(({category_image,category_name,category_price,category_rating})=><div id="pictires_display">
             <div className="display">
                 <div>
                     <img src={category_image} alt="" />
@@ -110,9 +139,11 @@ const Displayproduct = () => {
                     <h4>{category_rating}</h4>
                 </div>
                 <div>
-                    {[1, 2, 3, 4, 5].map((value) => (
-                    <span key={value} onClick={() => handleRatingClick(value)} style={{ cursor: 'pointer', color: value <= rating ? 'gold' : 'gray' }}>★</span>
-                    ))}
+                    <span className={`starStyle${1}`} onClick={() => handleColorClick(1)} style={{ cursor: 'pointer'}}>★</span>
+                    <span className={`starStyle${2}`} onClick={() => handleColorClick(2)} style={{ cursor: 'pointer'}}>★</span>
+                    <span className={`starStyle${3}`} onClick={() => handleColorClick(3)} style={{ cursor: 'pointer'}}>★</span>
+                    <span className={`starStyle${4}`} onClick={() => handleColorClick(4)} style={{ cursor: 'pointer'}}>★</span>
+                    <span className={`starStyle${5}`} onClick={() => handleColorClick(5)} style={{ cursor: 'pointer'}}>★</span>
                 </div>
             </div>
         </div>
@@ -122,11 +153,10 @@ const Displayproduct = () => {
      
     </div>
 </div>
-</div>
-    )
-
     
-}
+</div>
+)}
+
 export default Displayproduct;
 
 // get data from the input box in react using hooks useState
