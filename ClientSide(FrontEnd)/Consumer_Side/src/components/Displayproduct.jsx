@@ -44,19 +44,8 @@ const Displayproduct = () => {
             setInputValue("");
         }
 
-        const [rating, setRating] = useState(0);
-
-        const handleColorClick = (value) => {
-            setValue(value);
-            for(let i = 1; i <= value; i++){
-                const backgroundTemp = {
-                    backgroundColor :"gold"
-                }
-                document.querySelector(`.starStyle${i}`).style.color = "gold";
-            }
-            setColor("gold");
-            // console.log(data);
-        }
+       
+        
     return (
     
     <div>
@@ -77,6 +66,9 @@ const Displayproduct = () => {
                         <div className="animaldesign">
                             <img src="https://leadwinner.com/shilparamam2/images2/tera/20.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
                         </div>
+                        <div className="animal">
+                            <img src="https://leadwinner.com/shilparamam2/images2/tera/20.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
+                        </div>
                         
                     </div>
                     <div className="text-align">
@@ -85,7 +77,9 @@ const Displayproduct = () => {
                         <p className="three">Hanging bell</p>
                         <p className="four">Natural Pot</p>
                         <p className="five">Cooking Pot</p>
+                        <p className="six">Cooking Pot</p>
                     </div>
+                   
        
        <header>
                 <nav>
@@ -93,12 +87,11 @@ const Displayproduct = () => {
 
                     <div id="colors">
                         <input id="bar" type="text" placeholder="Search" value={inputValue} onChange={handleInputChange} />
-                        {/* <div onClick={clearData()}>clear</div> */}
                         <button id="searchdata" onClick={searchProductData}>search</button>
                         <img onClick={clearData} id="wrong"src="https://tse4.mm.bing.net/th?id=OIP.5QYvJ6lCh-_pQ0AeWcpOfQHaHa&pid=Api&P=0&h=180" alt="" />
                         
                     </div>
-                             
+                    <img id="emoji"src="https://media.tenor.com/images/e7997130d42c853ea735e526beee6144/tenor.gif" alt="" />       
                 
        
         <div id="lowhigh">
@@ -128,7 +121,7 @@ const Displayproduct = () => {
             if(element.category_name.toLocaleLowerCase().includes(inputValue.toLocaleLowerCase())){
                 return potteryData;
             }
-        })?.map(({category_image,category_name,category_price,category_rating})=><div id="pictires_display">
+        })?.map(({category_image,category_name,category_price})=><div id="pictires_display">
             <div className="display">
                 <div>
                     <img src={category_image} alt="" />
@@ -136,15 +129,13 @@ const Displayproduct = () => {
                 <div className="hover">
                     <h4>{category_name}</h4>
                     <h4>{category_price}</h4>
-                    <h4>{category_rating}</h4>
+                    <div id="boxesSmall">
+                    <div className="smallBoxes1"><img src="https://thumbs.dreamstime.com/b/shopping-cart-icon-vector-logo-137280611.jpg" alt="" /></div>
+                    <div className="smallBoxes2"><img src="https://media.istockphoto.com/id/1284125145/photo/magnifying-glass-top-view-with-blue-tinted-lens.jpg?s=612x612&w=0&k=20&c=1lOGI1OLFj4bHi4liplOollhhplRaYm99uvhL53fY8Q=" alt="" /></div>
+                    <div className="smallBoxes3"><img src="https://png.pngtree.com/png-vector/20220611/ourmid/pngtree-wish-list-icon-wishlist-check-png-image_4841955.png" alt="" /></div>
+                    </div>
                 </div>
-                <div>
-                    <span className={`starStyle${1}`} onClick={() => handleColorClick(1)} style={{ cursor: 'pointer'}}>★</span>
-                    <span className={`starStyle${2}`} onClick={() => handleColorClick(2)} style={{ cursor: 'pointer'}}>★</span>
-                    <span className={`starStyle${3}`} onClick={() => handleColorClick(3)} style={{ cursor: 'pointer'}}>★</span>
-                    <span className={`starStyle${4}`} onClick={() => handleColorClick(4)} style={{ cursor: 'pointer'}}>★</span>
-                    <span className={`starStyle${5}`} onClick={() => handleColorClick(5)} style={{ cursor: 'pointer'}}>★</span>
-                </div>
+            
             </div>
         </div>
         )

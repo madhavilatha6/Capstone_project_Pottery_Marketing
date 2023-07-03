@@ -14,10 +14,11 @@
     margin-top: 60px;
 }
 .hover{
-    background-color: rgb(243, 194, 47);
+    /* background-color: rgb(243, 194, 47); */
     height: 140px;
     padding: 7px;
     margin-top: -10px;
+    
 }
 
 .design{
@@ -40,7 +41,7 @@
     width: 150px;
     height: 150px;
     border-radius: 120px;
-    margin-left: -60px;
+    margin-left: -100px;
     margin-top: -30px;
 }
 .flower:hover {
@@ -55,7 +56,7 @@
     width: 150px;
     height: 150px;
     border-radius: 120px;
-    margin-left: -60px;
+    margin-left: -115px;
     margin-top: -30px;
 }
 .design:hover {
@@ -70,7 +71,7 @@
     width: 150px;
     height: 150px;
     border-radius: 120px;
-    margin-left: -60px;
+    margin-left: -80px;
     margin-top: -30px;
 }
 .hangingbells:hover {
@@ -85,7 +86,7 @@
     width: 150px;
     height: 150px;
     border-radius: 120px;
-    margin-left: -40px;
+    margin-left: -70px;
     margin-top: -30px;
 }
 .naturalpots:hover {
@@ -100,10 +101,25 @@
     width: 150px;
     height: 150px;
     border-radius: 120px;
-    margin-left: -40px;
+    margin-left: -70px;
     margin-top: -30px;
 }
 .animaldesign:hover {
+    transform: scale(1.2, 1.2);
+  
+}
+.animal:hover::after {
+    opacity: 1;
+   
+  }
+  .animal > img{
+    width: 150px;
+    height: 150px;
+    border-radius: 120px;
+    /* margin-left: 175px; */
+    margin-top:40px;
+}
+.animal:hover {
     transform: scale(1.2, 1.2);
   
 }
@@ -142,13 +158,15 @@
     margin: 20px;
     width: 100px;
     height: 100px;
+    margin-left: -150px;
 }
 .categories{
     display: flex;
     margin-top: -30px;
+    /* border: 5px solid gray; */
 }
 #bar{
-    margin-left: 100px;
+    margin-left: 0px;
     margin-top: -400px;
     /* border: 3px solid gray; */
     border: 2px solid  rgb(243, 194, 47);
@@ -167,11 +185,13 @@
    margin-top: 40px;
    margin-left: 40px;
     text-align: center;
-    /* border: 2px solid  rgb(243, 194, 47); */
+    border: 2px solid  rgb(243, 194, 47);
+    /* border-radius: 40px 0px 40px 0px; */
 }
 .display img{
     width: 300px;
     height: 200px;
+    /* border-radius: 40px 0px 40px 0px; */
 }
 #pictires_display{
     display: flex;
@@ -193,24 +213,28 @@
     font-size: 20px;
 }
 .one{
-    margin-left: 120px;
+    margin-left: 70px;
     margin-top: -120px;
 }
 .two{
-    margin-left: 360px;
+    margin-left: 300px;
     margin-top: -40px;
 }
 .three{
-    margin-left: 42%;
+    margin-left: 38%;
     margin-top: -40px;
 }
 .four{
-    margin-left: 60%;
+    margin-left: 54%;
     margin-top: -40px;
 }
 .five{
-    margin-left: 77%;
+    margin-left: 69%;
     margin-top: -40px;
+}
+.six{
+    margin-left: 85%;
+    margin-top: -40px; 
 }
 #colors{
     border: 2px solid white;
@@ -243,9 +267,12 @@ input{
     width: 30px;
     height: 30px;
 }
+#colors > #bar{
+    border-radius: 2px 2px 2px 2px;
+}
 #wrong{
-    width: 30px;
-    height: 30px; 
+    width: 15px;
+    height: 15px; 
     margin-left: -180px;
     margin-top: -400px;
 }
@@ -281,21 +308,21 @@ input{
   }
   #lowhigh{
     margin-top: -70px;
-    margin-left: 50%;
+    margin-left: 67%;
     border-radius: 30px;
     /* border: 2px solid  rgb(243, 194, 47); */
   }
   select{
     padding: 12px;
     font-size: 15px;
-    border-radius: 30px;
+    /* border-radius: 30px; */
     border: 2px solid  rgb(243, 194, 47);
   }
   #category{
     margin-top: -45px;
-    margin-left: 70%;
-    border-radius: 30px;
-    /* border: 2px solid  rgb(243, 194, 47); */
+    margin-left: 85%;
+    /* border-radius: 30px; */
+    border: 2px solid  rgb(243, 194, 47);
   }
   #category > select{
     border: 2px solid  rgb(243, 194, 47);
@@ -306,3 +333,60 @@ input{
     padding: 50px;
     margin-top: 60px;
   }
+  #emoji{
+    width: 100px;
+    height: 100px;
+    margin-top: -400px;
+    margin-left: 600px;
+  }
+.smallBoxes1{
+    padding: 10px;
+    
+    width: 20px;
+    height: 20px;
+}
+.smallBoxes1 > img{
+    width: 40px;
+    height: 40px;
+    margin-top: -12px;
+    border: 1px solid gray;
+    margin-left: -12px;
+}
+.smallBoxes2{
+    padding: 10px;
+    /* border: 2px solid red; */
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+}
+.smallBoxes2 > img{
+    width: 40px;
+    height: 40px;
+    margin-top: -13px;
+    border: 1px solid gray;
+    margin-left: -12px;
+}
+.smallBoxes3{
+    padding: 10px;
+    /* border: 2px solid re; */
+    width: 20px;
+    height: 20px;
+     margin-left: 20px;
+     /* margin: 10px; */
+}
+.smallBoxes3 > img{
+    width: 40px;
+    height: 40px;
+    margin-top: -13px;
+    border: 1px solid gray;
+    margin-left: -12px;
+}
+#boxesSmall{
+    display: flex;
+    margin: 10px;
+    margin-left: 60px;
+    width: 170px;
+    margin-top: -10px;
+}
+
+  
