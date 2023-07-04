@@ -1,0 +1,88 @@
+.mainImg > img{
+    width: 80%;
+    height: 700px;
+    margin-left: 150px;
+    border-radius: 80px;
+    margin-top: 20px;
+}
+.locationInfo{
+    display: flex;
+    justify-content: space-evenly;
+}
+.class > p{
+    font-size: 20px;
+    margin-left: 40px;
+}
+.class > h2{
+    margin-left: 30px;
+}
+iframe{
+    width: 80%;
+    height: 500px;
+    margin-left: 20px;
+    border: 4px solid rgb(189, 188, 188);
+}
+.map{
+    text-align: center;
+}
+
+.footpart{
+    background-color: rgb(189, 188, 188);
+    height: 40%;
+    display: flex;
+    padding: 70px;
+    margin-top: 40px;
+}
+.servicepart{
+margin-left: 150px;
+font-size: 20px;
+}
+.contactpart{
+margin-left: 150px;
+font-size: 20px;
+}
+.socialpart{
+margin-left: 150px;
+font-size: 20px;
+}
+.aboutpart{
+margin-left: 50px;
+font-size: 20px; 
+}
+.logopart > img{
+width: 60px;
+height: 60px;
+margin-left: -180px;
+margin-top: 300px;
+border-radius: 40px;
+}
+.subscribepart{
+width: 320px;
+height: 60px;
+border: 2px solid red;
+border-radius: 40px;
+margin-left: 60px;
+}
+.colorpotspart{
+width: 200px;
+height: 400px;
+margin-left: 260px;
+margin-top: -80px;
+}
+.navpart{
+    justify-content: space-evenly;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 200px;
+    color: black;
+    font-size: 18px;
+   
+}
+p{
+    color:black;
+}
+.buttonpart{
+    padding: 10px;
+    margin-top: -10px;
+    border-radius: 25px;
+}
