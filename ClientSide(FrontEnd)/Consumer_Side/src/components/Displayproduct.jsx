@@ -3,13 +3,11 @@ import "./product.css";
 const Displayproduct = () => {
         const [inputValue, setInputValue] = useState('');
         const [potteryData,setPotteryData] = useState([]);
-        const [color, setColor] = useState("gray");
-        const [value, setValue] = useState(1);
     useEffect(()=>{
         PotteryProductData();
     },[])
     const PotteryProductData = () => {
-        fetch("http://localhost:5050/data").then((res)=>{
+        fetch("http://localhost:5050/potterdata").then((res)=>{
             return res.json();
         }).then((res)=>{
             setPotteryData(res);
@@ -112,17 +110,17 @@ const Displayproduct = () => {
        <div className="array">
        {
         potteryData?.filter(function(element){
-            if(element.category_name.toLocaleLowerCase().includes(inputValue.toLocaleLowerCase())){
+            if(element.product_name.toLocaleLowerCase().includes(inputValue.toLocaleLowerCase())){
                 return potteryData;
             }
-        })?.map(({category_image,category_name,category_price})=><div id="pictires_display">
+        })?.map(({product_image,product_name,product_price})=><div id="pictires_display">
             <div className="display">
                 <div>
-                    <img src={category_image} alt="" />
+                    <img src={product_image} alt="" />
                 </div>
                 <div className="hover">
-                    <h4>{category_name}</h4>
-                    <h4>{category_price}</h4>
+                    <h4>{product_name}</h4>
+                    <h4>{product_price}</h4>
                     <div id="boxesSmall">
                     <div className="smallBoxes1"><img src="https://thumbs.dreamstime.com/b/shopping-cart-icon-vector-logo-137280611.jpg" alt="" /></div>
                     {/* <div className="addtocart">Add to Cart</div> */}

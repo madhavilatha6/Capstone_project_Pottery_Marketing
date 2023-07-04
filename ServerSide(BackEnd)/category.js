@@ -8,11 +8,11 @@ var con = mysql.createConnection({
     host: "localhost",
     user: "root",
     password: "MADHULATHA@123",
-    database:'categories'
+    database:'PotteryParadise'
 });
 
-app.get("/data",async(req,res) =>{
-        var getTableData = `SELECT *  FROM searchData`;
+app.get("/potterdata",async(req,res) =>{
+        var getTableData = `SELECT *  FROM product_info`;
         con.query(getTableData, function(err, result){
             if(err) throw err;
             res.status(200).send(result);
@@ -20,7 +20,16 @@ app.get("/data",async(req,res) =>{
 })
 app.get("/search/:searchData",async(req,res) =>{
     var data = req.params.searchData
-    var getTableData = `select * from searchData where category_name="${data}"`;
+    var getTableData = `select * from product_info where product_name="${data}"`;
+    con.query(getTableData, function(err, result){
+        if(err) throw err;
+        res.status(200).send(result);
+    })
+})
+
+app.get("/sort/:sortData",async(req,res) =>{
+    var sortdata = req.params.sortData
+    var getTableData = `select * from product_info ORDER BY  product_price ${(sortdata === 'asc') ? "ASC" : "DESC"}`;
     con.query(getTableData, function(err, result){
         if(err) throw err;
         res.status(200).send(result);
