@@ -102,13 +102,7 @@ const Displayproduct = () => {
                 </select>
         </div>
 
-        <div id="category">
-                <select>
-                    <option>Click More Items</option>
-                    <option></option>
-                    <option></option>
-                </select>
-        </div>
+       
         </div>
         </nav>
         </header>
@@ -131,8 +125,11 @@ const Displayproduct = () => {
                     <h4>{category_price}</h4>
                     <div id="boxesSmall">
                     <div className="smallBoxes1"><img src="https://thumbs.dreamstime.com/b/shopping-cart-icon-vector-logo-137280611.jpg" alt="" /></div>
+                    {/* <div className="addtocart">Add to Cart</div> */}
                     <div className="smallBoxes2"><img src="https://media.istockphoto.com/id/1284125145/photo/magnifying-glass-top-view-with-blue-tinted-lens.jpg?s=612x612&w=0&k=20&c=1lOGI1OLFj4bHi4liplOollhhplRaYm99uvhL53fY8Q=" alt="" /></div>
+                    {/* <div className="view">View</div> */}
                     <div className="smallBoxes3"><img src="https://png.pngtree.com/png-vector/20220611/ourmid/pngtree-wish-list-icon-wishlist-check-png-image_4841955.png" alt="" /></div>
+                    {/* <div className="wishlist">Wishlist</div> */}
                     </div>
                 </div>
             
