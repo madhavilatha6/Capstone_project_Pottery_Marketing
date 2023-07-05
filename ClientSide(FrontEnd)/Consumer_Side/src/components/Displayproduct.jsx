@@ -1,7 +1,9 @@
 import { useEffect , useState} from "react";
 import "./product.css";
+import Category from "./category";
 const Displayproduct = () => {
         const [inputValue, setInputValue] = useState('');
+        // const [inputValue, setInputValue] = useState('');
         const [potteryData,setPotteryData] = useState([]);
     useEffect(()=>{
         PotteryProductData();
@@ -24,8 +26,27 @@ const Displayproduct = () => {
         })
     }
 
+
+    const categaryProductData = () => {
+        fetch(`http://localhost:5050/search/${inputValue}`).then((res)=>{
+            return res.json();
+        }).then((res)=>{
+            setPotteryData(res);
+            console.log(res);
+        })
+    }
+
     const sortData = (data) =>{
         fetch(`http://localhost:5050/sort/${data}`).then((res)=>{
+            return res.json();
+        }).then((res)=>{
+            setPotteryData(res);
+            console.log(res);
+        })
+    }
+
+    const categoryFunction = ( Category)=>{
+        fetch(`http://localhost:5050/categary/${Category}`).then((res)=>{
             return res.json();
         }).then((res)=>{
             setPotteryData(res);
@@ -49,23 +70,23 @@ const Displayproduct = () => {
     <div>
         <div className="color">
         <div className="categories">
-                        <div className="design">
-                            <img src="https://leadwinner.com/shilparamam2/images2/tera/3.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
+                        <div className="design" onClick={() => categoryFunction(116)}>
+                            <img src="https://i.etsystatic.com/26610308/r/il/723e68/2831141092/il_1588xN.2831141092_dr44.jpg" alt="" />
                         </div>
-                        <div className="flower">
-                            <img src="https://leadwinner.com/shilparamam2/images2/tera/1.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
+                        <div className="flower" onClick={() => categoryFunction(117)}>
+                            <img src="https://img0.etsystatic.com/151/0/14285414/il_340x270.1156193620_ol78.jpg" alt="" />
                         </div>
-                        <div className="hangingbells">
-                            <img src="https://leadwinner.com/shilparamam2/images2/tera/12.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
+                        <div className="hangingbells" onClick={() => categoryFunction(119)}>
+                            <img src="https://n2.sdlcdn.com/imgs/j/k/g/Royaltresure-Clay-Diwali-Diya-Pack-SDL035462887-1-71909.jpg" alt="" />
                         </div>
-                        <div className="naturalpots">
-                            <img src="https://leadwinner.com/shilparamam2/images2/tera/10.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
+                        <div className="naturalpots" onClick={() => categoryFunction(121)}>
+                            <img src="https://madeheart.com/media/productphoto/767/30518970/1_13_1.jpg" alt="" />
                         </div>
-                        <div className="animaldesign">
-                            <img src="https://leadwinner.com/shilparamam2/images2/tera/20.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
+                        <div className="animaldesign" onClick={() => categoryFunction(122)}>
+                            <img src="https://thumbs.dreamstime.com/b/handmade-clay-pots-workshop-11386949.jpg" alt="" />
                         </div>
-                        <div className="animal">
-                            <img src="https://leadwinner.com/shilparamam2/images2/tera/20.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
+                        <div className="animal" onClick={() => categoryFunction(123)}>
+                            <img src="https://madeheart.com/media/productphoto/930/65263236/148_DSC_0154.jpg" alt="" />
                         </div>
                         
                     </div>
@@ -85,7 +106,7 @@ const Displayproduct = () => {
 
                     <div id="colors">
                         <input id="bar" type="text" placeholder="Search" value={inputValue} onChange={handleInputChange} />
-                        <button id="searchdata" onClick={searchProductData}>search</button>
+                        <button id="searchdata" onClick={() =>searchProductData()}>search</button>
                         <img onClick={clearData} id="wrong"src="https://tse4.mm.bing.net/th?id=OIP.5QYvJ6lCh-_pQ0AeWcpOfQHaHa&pid=Api&P=0&h=180" alt="" />
                         
                     </div>
@@ -144,11 +165,3 @@ const Displayproduct = () => {
 )}
 
 export default Displayproduct;
-
-// get data from the input box in react using hooks useState
-// write a fucntion for calling the api
-// pass input value while calling the api
-// display the data accordingly
-//modify the search api 
-//if the user search with a half text
-//result should came
