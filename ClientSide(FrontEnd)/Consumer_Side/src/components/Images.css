@@ -1,45 +1,28 @@
 .homepageimage{
-    width: 85%;
-    height: 650px;
-    margin-top: 100px;  
+    width: 100%;
+    height: 630px;
+    margin-top: 20px;  
     display: block;
-    margin-left: 110px;
-    border-radius: 80px;
+    /* margin-left: 110px; */
+    /* border-radius: 80px; */
 }
-.nav{
-    justify-content: space-evenly;
+.navigation{
+    /* border: 1px solid red; */
     display: flex;
-    margin-top: -750px;
-    /* margin-left: 200px; */
-    color: black;
+    /* margin-left: 30px; */
+}
+.navigation  >  p{
+    margin-left: 110px;
     font-size: 18px;
-   border: 1px solid  rgb(189, 188, 188);
-   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-.nav > h3{
-    color: black;
-    font-size: 20px;
-}
-p{
-    color:black;
-}
-.button{
-    /* padding: 10px; */
-    margin-top: 10px;
-    border-radius: 25px;
-    width: 100px;
-    height: 40px;
-    font-size: 15px;
-    border: 2px solid white;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
+
 .plainpot{
-    border: 2px solid #DDAD75;
+    border: 2px solid #fad4a8;
     width: 200px;
     height: 200px;
     border-radius: 150px;
     color: white;
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    /* box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px; */
 }
 .bottle{
     border: 2px solid rgb(189, 188, 188);
@@ -91,7 +74,7 @@ p{
     width: 100%;
     height: 500px;
     justify-content: space-evenly;
-    margin-top: 70px;
+    /* margin-top: 70px; */
 }
 .second{
     width: 80%;
@@ -101,7 +84,7 @@ p{
     justify-content: space-evenly;
     margin: 50px;
     padding: 100px;
-    margin-top:70px;
+    /* margin-top:70px; */
     border-radius: 150px;
 }
 .image{
@@ -145,7 +128,7 @@ p{
 .nextpage1{
     width: 400px;
      height:400px;
-    border: 2px solid #DDAD75;
+    /* border: 2px solid #DDAD75; */
     margin-left: 750px;
     margin-top: -450px;
     text-align: center;
@@ -155,10 +138,11 @@ p{
     margin-top: 40px;
     color: black;
 }
-.nextpage1 > button{
+.shop{
     padding: 20px;
     border-radius: 35px;
     margin-top: 40px;
+    margin-left: 40px;
     background-color: #DDAD75;
     border: 1px solid #DDAD75;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -209,6 +193,8 @@ p{
     border: 2px solid gray;
     margin: 80px 200px 10px 200px;
     display: flex;
+    padding: 40px;
+    border: 2px solid #DDAD75
 
 }
 .firstdiv{
@@ -263,7 +249,7 @@ p{
 .hangingpottext > button{
     padding: 10px;
     border-radius: 30px;
-    border: 2px solid  #DDAD75;
+    border: 2px solid  #eed1b1;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .footer{
@@ -277,7 +263,7 @@ p{
         height: 40%;
         display: flex;
         padding: 70px;
-        margin-top: 400px;
+        margin-top: 200px;
 }
 .service{
     margin-left: 150px;
@@ -320,7 +306,7 @@ p{
     margin-left: 540px;
     margin: 30px;
     padding: 30px;
-    margin-top: 720px;
+    margin-top: 20px;
     text-align: center;
 }
 .potteryClass{
@@ -390,10 +376,12 @@ p{
 .decorativebell{
     width: 70px;
     margin-left: 50px;
+    margin-top: 140px;
 }
 .decorative{
     width: 70px;
     margin-left: 1200px;
+    margin-top: 140px;
 }
 .hangingbell{
     display: flex;
@@ -644,15 +632,120 @@ h2{
       transform: translate(-10%, -5%) translateY(0);
     }
   }
-  /* @keyframes wheelPottery2{
-    0% {
-      transform: translate(-90%, -80%) translateY(20px);
-    }
-    50% {
-      transform: translate(-10%, 10%) translateX(10px);
-    }
-    100% {
-      transform: translate(-10%, -5%) translateY(0);
-    }
+  .addtocart{
+    width: 60px;
+    height: 60px;
+    margin-left: 100px;
+    margin-top: 25px;
+  }
+  #home{
+    margin-left: 70px;
+    margin-top: 50px;
+  }
+  #home:hover{
+    text-decoration: none;
+    color: red;
+  }
+  Link:hover{
+    color: red;
+  }
+  #categary{
+    margin-top: 50px;
+  }
+  #aboutus{
+    margin-top: 50px;
+  }
+  #contactus{
+    margin-top: 50px;
+  }
+   .read{
+    margin-left: 20px;
+    margin-top: -4px;
+    border: 2px solid #DDAD75
+   }
+   .read1{
+    margin-left: 20px;
+    margin-top: -4px;
+    border: 2px solid #DDAD75;
+    padding: 10px;
+    margin-top: 20px;
+   }
+   .twoimages{
+    display: flex;
+    
+   }
+   .twoimages > img{
+    border-radius: 20px 20px 20px 20px;
+   }
+   .insideimage{
+    border:20px solid #ffcab0;
+     width:600px;
+    height:400px;
+    text-align: center;
+    opacity: 0.9;
+    margin-left: 540px;
+    margin-top: -550px;
+  }
+  /* .insideimage > p{
+    padding:30px;
   } */
-   
+  .making > img{
+        width: 500px;
+        margin-left: 700px;
+        /* margin-top: -60px; */
+  }
+  .making{
+    /* border: 2px solid red; */
+    width: 80%;
+    margin-top: 80px;
+    margin-left: 150px;
+  }
+  .making > h2{
+    margin-left: 60px;
+    margin-top: -180px;
+    color:  #DDAD75;
+  }
+  .making > p{
+    font-size: 20px;
+    margin-left: -40px;
+  }
+  .making1{
+    width: 80%;
+     margin-top: 80px;
+    margin-left: 150px;
+  }
+  .making1 > img{
+    width: 500px;
+    margin-left: -70px;
+}
+.making1 > h2{
+    margin-left: 150px;
+    margin-top: -100px;
+    color:  #DDAD75;
+  }
+  .making1 > p{
+    font-size: 20px;
+    margin-left: 500px;
+  }
+  .making1 > h2{
+    margin-left: 600px;
+    margin-top: -200px;
+    color:  #DDAD75;
+  }
+.embark{
+    text-align: center;
+    margin-top: 160px;
+    font-size: 20px;
+    color:  #DDAD75;
+}
+.embark > h3{
+    font-size: 50px;
+}
+.embark > p{
+    font-size: 30px;
+    font-family: sans-serif;
+}
+.logohome{
+    width: 190px;
+    height: 130px;
+}

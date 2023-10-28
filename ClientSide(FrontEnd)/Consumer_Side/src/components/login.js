@@ -28,8 +28,8 @@ function Login(){
     return(
         <div>
             <div>
-                <img className="image4" src="resources/hangingBrownBell.png" alt="mud pot"/>
-                <img className="image5" src="resources/hangingBrownBell.png" alt="mud pot"/>
+                {/* <img className="image4" src="resources/hangingBrownBell.png" alt="mud pot"/> */}
+                {/* <img className="image5" src="resources/hangingBrownBell.png" alt="mud pot"/> */}
              </div>
              
             <div className='form-container'>
@@ -39,8 +39,8 @@ function Login(){
                     <input type="text" className="username" placeholder='UserName' onChange={e=>setusername(e.target.value)}/><br></br>
                     <input type="number" className="password" placeholder='password' onChange={e=>setpassword(e.target.value)}/><br></br>
                     <button className='submit1' onClick={btnClick}>Submit</button>
-                    <h3>signup page</h3>
-                    <h3 className='span'>Forgot page</h3>
+                    <h4>signup page</h4>
+                    <h4 className='span'>Forgot page</h4>
                 </div>
         </div>   
         </div>

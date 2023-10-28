@@ -25,8 +25,8 @@ function Signup(){
     return(
         <div id="layout">
             <div>
-                <img className="image1" src="resources/hangingBrownBell.png" alt="mud pot"/>
-                <img className="image2" src="resources/hangingBrownBell.png" alt="mud pot"/>
+                {/* <img className="image1" src="resources/hangingBrownBell.png" alt="mud pot"/> */}
+                {/* <img className="image2" src="resources/hangingBrownBell.png" alt="mud pot"/> */}
              </div>
              
             <div className='container'>
@@ -39,7 +39,7 @@ function Signup(){
                     <input type="number" className="number" placeholder='Phone Number'onChange={e=>setNumber(e.target.value)}/><br></br>
                     <input type="number" className="password" placeholder='password'onChange={e=>setPassword(e.target.value)}/><br></br>
                     <button className='submit' onClick={signUpButtonClick}>Submit</button>
-                    <h3 className='h3'>If there is no Account<span onClick={signUpButtonClick}>  login?</span></h3>
+                    <h4 className='h3'>If there is no Account<span onClick={signUpButtonClick}>  login?</span></h4>
                 </div>
         </div>   
         </div>
