@@ -3,14 +3,6 @@ import './About.css';
 function About(){
     return(
         <div>
-             <div className="navbar">
-                    <div>Home</div>
-                    <div>Category</div>
-                    <div>About Us</div>
-                    <button className="buttonBtn">Register</button>
-                    <button className="buttonBtn">Add to cart</button>
-                </div>
-               
             <div className='imagesAll'>
                 <h2>Exclusive Pottery Artists</h2>
                 <img src='resources/terracoka.jpg'alt=''/>
@@ -65,43 +57,7 @@ In AP, Palamaner Mandal in Chittoor District is quite popular for its attractive
                     <img src='./resources/infoImage.jpg' alt=''/>
                 </div>
             </div>
-            <div className='footer1s'>
-                    <div className='abouts'>
-                        <h4>AboutUs</h4>
-                        <p>Potters</p>
-                        <p>Vision</p>
-                        <p>Aim</p>
-                    </div>
-                    <div className='services'>
-                        <h4>Services</h4>
-                        <p>Writing</p>
-                        <p>Vision</p>
-                        <p>Aim</p>
-                    </div>
-                    <div className='contacts'>
-                        <h4>Contactus</h4>
-                        <p>Andrapradesh</p>
-                        <p>Karnataka</p>
-                        <p>Tamilnadu</p>
-                    </div>
-                    <div className='socials'>
-                        <h4>Socialmedia</h4>
-                        <p>Facebook</p>
-                        <p>WhatsApp</p>
-                        <p>Twitter</p>
-                        <p>Google</p>
-                        <p>Instagram</p>
-                    </div>
-                    <div className='logos'>
-                    <img className="google" src="resources/google.png" alt="mud pot"/>
-                    <img className="facebook" src="resources/facebook.png" alt="mud pot"/>
-                    <img className="instagram" src="resources/instagram.png" alt="mud pot"/>
-                    <img className="whatsapp" src="resources/whatsapp.png" alt="mud pot"/>
-                    </div>
-                    <div>
-                    <img className="colorpotss" src="resources/colorPots.png" alt="mud pot"/>
-                    </div>  
-            </div>
+            
         </div>
     )
 }

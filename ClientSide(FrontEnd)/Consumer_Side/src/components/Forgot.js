@@ -31,8 +31,8 @@ function Forgot(){
     return(
         <div>
             <div>
-                <img className="hangingbrownbell" src="resources/hangingBrownBell.png" alt="mud pot"/>
-                <img className="hangingbrownbell1" src="resources/hangingBrownBell.png" alt="mud pot"/>
+                {/* <img className="hangingbrownbell" src="resources/hangingBrownBell.png" alt="mud pot"/> */}
+                {/* <img className="hangingbrownbell1" src="resources/hangingBrownBell.png" alt="mud pot"/> */}
              </div>
              
             <div className='maincontainer'>

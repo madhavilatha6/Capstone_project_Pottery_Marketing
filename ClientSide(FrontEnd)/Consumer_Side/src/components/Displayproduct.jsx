@@ -1,6 +1,7 @@
 import { useEffect , useState} from "react";
 import "./product.css";
 import Category from "./category";
+import axios from "axios";
 const Displayproduct = () => {
         const [inputValue, setInputValue] = useState('');
         // const [inputValue, setInputValue] = useState('');
@@ -8,13 +9,10 @@ const Displayproduct = () => {
     useEffect(()=>{
         PotteryProductData();
     },[])
-    const PotteryProductData = () => {
-        fetch("http://localhost:5050/potterdata").then((res)=>{
-            return res.json();
-        }).then((res)=>{
-            setPotteryData(res);
-            console.log(res);
-        })
+    const PotteryProductData = async() => {
+        const response=await axios.get("http://localhost:8080/information");
+        console.log("test",response)
+        setPotteryData(response?.data);
     }
 
     const searchProductData = () => {

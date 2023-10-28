@@ -1,13 +1,13 @@
 .maincontainer{
     display: flex;
-    margin-top: -2%;
+    /* margin-top: -2%; */
     justify-content: center;
     border-radius: 70px;
 }
 .main-container{
     padding: 30px;
     width: 550px;
-    margin-top: -490px;
+    margin-top: 40px;
     border-radius: 70px;
     background-color: #FFB5C3;
     background-image: url('../../public/resources/bellWithPlate.png');
