@@ -1,51 +1,49 @@
-.maincontainer{
-    display: flex;
-    /* margin-top: -2%; */
-    justify-content: center;
-    border-radius: 70px;
+.maincontainer {
+  display: flex;
+  justify-content: center;
+  border-radius: 70px;
 }
-.main-container{
-    padding: 30px;
-    width: 550px;
-    margin-top: 40px;
-    border-radius: 70px;
-    background-color: #FFB5C3;
-    background-image: url('../../public/resources/bellWithPlate.png');
+.main-container {
+  padding: 30px;
+  width: 550px;
+  margin-top: 40px;
+  border-radius: 70px;
+  background-color: #ffb5c3;
+  background-image: url("../../public/resources/bellWithPlate.png");
 }
-.container2{
-    padding: 30px;
-    width: 400px;
-    height: 350px;
-    border-radius: 70px;
+.container2 {
+  padding: 30px;
+  width: 400px;
+  height: 350px;
+  border-radius: 70px;
 }
-.ame{
-    margin: 20px;
-    padding: 15px 40px;
-    margin-left: 60px;
-    border-radius: 30px;
-    background-color: white;
-    border: 2px solid white;
-
+.ame {
+  margin: 20px;
+  padding: 15px 40px;
+  margin-left: 60px;
+  border-radius: 30px;
+  background-color: white;
+  border: 2px solid white;
 }
-.mail{
-    margin: 20px;
-    padding: 15px 40px;
-    margin-left: 60px;
-    border-radius: 30px;
-    background-color: white;
-    border: 2px solid white;
+.mail {
+  margin: 20px;
+  padding: 15px 40px;
+  margin-left: 60px;
+  border-radius: 30px;
+  background-color: white;
+  border: 2px solid white;
 }
 
-.sub{
-    padding:15px 30px;
-    margin: 10px 0px 0px 130px;
-    border-radius: 30px;
-    background-color: white;
-    border: 2px solid white;
+.sub {
+  padding: 15px 30px;
+  margin: 10px 0px 0px 130px;
+  border-radius: 30px;
+  background-color: white;
+  border: 2px solid white;
 }
-.hangingbrownbell1{
-    margin-left: 1000px;
+.hangingbrownbell1 {
+  margin-left: 1000px;
 }
-.Forgotpage{
-    margin-left: 80px;
+.Forgotpage {
+  margin-left: 80px;
 }

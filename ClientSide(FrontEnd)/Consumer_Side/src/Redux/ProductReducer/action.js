@@ -1,55 +1,54 @@
-import{
-    GET_ALL_PRODUCTS_REQUEST,
-    GET_ALL_PRODUCTS_FAILURE,
-    GET_ALL_PRODUCTS_SUCCESS,
-
-    GET_SEARCH_PRODUCTS_REQUEST,
-    GET_SEARCH_PRODUCTS_FAILURE,
-    GET_SEARCH_PRODUCTS_SUCCESS,
-
-    GET_PRODUCTS_REQUEST,
-    GET_PRODUCTS_FAILURE,
-    GET_PRODUCTS_SUCCESS
+import {
+  GET_ALL_PRODUCTS_REQUEST,
+  GET_ALL_PRODUCTS_FAILURE,
+  GET_ALL_PRODUCTS_SUCCESS,
+  GET_SEARCH_PRODUCTS_REQUEST,
+  GET_SEARCH_PRODUCTS_FAILURE,
+  GET_SEARCH_PRODUCTS_SUCCESS,
 } from "./actionTypes";
 
 import axios from "axios";
 
-export const getallproductsrequest = () =>({
-    type:GET_ALL_PRODUCTS_REQUEST,
+export const getAllProductRequest = () => ({
+  type: GET_ALL_PRODUCTS_REQUEST,
 });
 
-export const getallproductsfailure = () =>({
-    type:GET_ALL_PRODUCTS_FAILURE,
+export const getAllProductFailure = (error) => ({
+  type: GET_ALL_PRODUCTS_FAILURE,
+  error,
 });
 
-export const getallproductssuccess = (loadData) =>({
-    type:GET_ALL_PRODUCTS_SUCCESS,
-    loadData,
+export const getAllProductSuccess = (payload) => ({
+  type: GET_ALL_PRODUCTS_SUCCESS,
+  payload,
 });
 
+export const getAllProduct = () => (dispatch) => {
+  dispatch(getAllProductRequest());
+  axios
+    .get("http://localhost:8080/products")
+    .then((res) => dispatch(getAllProductSuccess(res.data)))
+    .catch((error) => dispatch(getAllProductFailure(error)));
+};
 
-
-
-
-export const getsearchproductsrequest = () =>({
-    type:GET_SEARCH_PRODUCTS_REQUEST,
-});
-export const getsearchproductsfailure = () =>({
-    type:GET_SEARCH_PRODUCTS_FAILURE,
-});
-export const getsearchproductssuccess = (loadData) =>({
-    type:GET_SEARCH_PRODUCTS_SUCCESS,
-    loadData,
+export const getSearchProductRequest = () => ({
+  type: GET_SEARCH_PRODUCTS_REQUEST,
 });
 
+export const getSearchProductFailure = (error) => ({
+  type: GET_SEARCH_PRODUCTS_FAILURE,
+  error,
+});
 
-export const getproductsrequest = () =>({
-    type:GET_PRODUCTS_REQUEST,
+export const getSearchProductSuccess = (payload) => ({
+  type: GET_SEARCH_PRODUCTS_SUCCESS,
+  payload,
 });
-export const getproductsfailure = () =>({
-    type:GET_PRODUCTS_FAILURE,
-});
-export const getproductssuccess = (loadData) =>({
-    type:GET_PRODUCTS_SUCCESS,
-    loadData
-});
+
+export const searchProducts = (searchQuery) => (dispatch) => {
+  dispatch(getSearchProductRequest());
+  axios
+    .get(`http://localhost:8080/products/searchByName/${searchQuery}`)
+    .then((res) => dispatch(getSearchProductSuccess(res.data)))
+    .catch((error) => dispatch(getSearchProductFailure(error)));
+};

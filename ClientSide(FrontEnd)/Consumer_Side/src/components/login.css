@@ -1,79 +1,77 @@
-.form-container{
-    display: flex;
-    /* margin-top: -2%; */
-    justify-content: center;
-    border-radius: 70px;
+.form-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 70px;
 }
-.form-container4{
-    padding: 30px;
-    width: 550px;
-    margin-top: 40px;
-    border-radius: 70px;
-    background-color: #FFB5C3;
-    background-image: url('../../public/resources/bellWithPlate.png');
+.form-container4 {
+  padding: 30px;
+  width: 550px;
+  margin-top: 40px;
+  border-radius: 70px;
+  background-color: #ffb5c3;
+  background-image: url("../../public/resources/bellWithPlate.png");
 }
-.container2{
-    padding: 30px;
-    width: 400px;
-    height: 350px;
-    border-radius: 70px;
+.container2 {
+  padding: 30px;
+  width: 400px;
+  height: 350px;
+  border-radius: 70px;
 }
 
-.name1{
-    margin: 20px;
-    padding: 15px 40px;
-    margin-left: 60px;
-    border-radius: 30px;
-    background-color: white;
-    border: 2px solid white;
-
+.name1 {
+  margin: 20px;
+  padding: 15px 40px;
+  margin-left: 60px;
+  border-radius: 30px;
+  background-color: white;
+  border: 2px solid white;
 }
-.username{
-    margin: 20px;
-    padding: 15px 40px;
-    margin-left: 60px;
-    border-radius: 30px;
-    background-color: white;
-    border: 2px solid white;
+.username {
+  margin: 20px;
+  padding: 15px 40px;
+  margin-left: 60px;
+  border-radius: 30px;
+  background-color: white;
+  border: 2px solid white;
 }
-.email1{
-    margin: 20px;
-    padding: 15px 40px;
-    margin-left: 60px;
-    border-radius: 30px;
-    background-color: white;
-    border: 2px solid white;
+.email1 {
+  margin: 20px;
+  padding: 15px 40px;
+  margin-left: 60px;
+  border-radius: 30px;
+  background-color: white;
+  border: 2px solid white;
 }
-.number1{
-    margin: 20px;
-    padding: 15px 40px;
-    margin-left: 60px;
-    border-radius: 30px;
-    background-color: white;
-    border: 2px solid white;
+.number1 {
+  margin: 20px;
+  padding: 15px 40px;
+  margin-left: 60px;
+  border-radius: 30px;
+  background-color: white;
+  border: 2px solid white;
 }
-.password{
-    margin: 20px;
-    padding: 15px 40px;
-    margin-left: 60px;
-    border-radius: 30px;
-    background-color: white;
-    border: 2px solid white;
+.password {
+  margin: 20px;
+  padding: 15px 40px;
+  margin-left: 60px;
+  border-radius: 30px;
+  background-color: white;
+  border: 2px solid white;
 }
-.submit1{
-    padding:15px 30px;
-    margin: 10px 0px 0px 130px;
-    border-radius: 30px;
-    background-color: white;
-    border: 2px solid white;
+.submit1 {
+  padding: 15px 30px;
+  margin: 10px 0px 0px 130px;
+  border-radius: 30px;
+  background-color: white;
+  border: 2px solid white;
 }
-.image5{
-    margin-left: 1000px;
+.image5 {
+  margin-left: 1000px;
 }
-.h11{
-    margin-left: 80px;
+.h11 {
+  margin-left: 80px;
 }
-.span{
-    margin-left:300px;
-    margin-top: -35px;
+.span {
+  margin-left: 300px;
+  margin-top: -35px;
 }
