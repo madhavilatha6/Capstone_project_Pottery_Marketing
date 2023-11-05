@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example</groupId>
@@ -17,7 +17,7 @@
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.7.17</version> <!-- Use the latest Spring Boot version -->
     </parent>
-
+    
 
     <properties>
         <java.version>11</java.version> <!-- Use your preferred Java version -->
@@ -31,12 +31,12 @@
         </dependency>
 
         <!-- MySQL Connector/J for connecting to MySQL database -->
-        <dependency>
+		<dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.28</version> <!-- Update to the latest compatible version -->
         </dependency>
-
+		
 
         <!-- Spring Boot Starter Data JPA for JPA data access -->
         <dependency>
@@ -51,7 +51,7 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
+    
     <build>
         <plugins>
             <plugin>
@@ -60,5 +60,5 @@
             </plugin>
         </plugins>
     </build>
-
+    
 </project>

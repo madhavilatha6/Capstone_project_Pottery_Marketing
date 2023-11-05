@@ -46,8 +46,10 @@ const DisplayProduct = () => {
     }
   };
 
-  const sortData = (data) => {
-    fetch(`http://localhost:8081/sort/${data}`)
+  const sortData = (sortOrder) => {
+    const apiUrl = `http://localhost:8080/products/sort=${sortOrder}`;
+    
+    fetch(apiUrl)
       .then((res) => res.json())
       .then((res) => {
         setPotteryData(res);
@@ -56,22 +58,8 @@ const DisplayProduct = () => {
       .catch((error) => {
         console.error("Error in sortData:", error);
       });
-  };
+}
 
-  const categoryFunction = (Category) => {
-    fetch(`http://localhost:8083/categaries/${Category}`)
-      .then((res) => res.json())
-      .then((res) => {
-        console.log("Category Data:", res);
-        setPotteryData({
-          category_id: Category,
-          products: res,
-        });
-      })
-      .catch((error) => {
-        console.error("Error in categoryFunction:", error);
-      });
-  };
 
   const handleInputChange = (event) => {
     setInputValue(event.target.value);

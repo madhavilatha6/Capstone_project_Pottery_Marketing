@@ -7,7 +7,7 @@ import Contact from "./components/contact";
 import About from "./components/About";
 import Checkout from "./components/checkout";
 import Signup from "./components/signup";
-import Product from "./components/Product";
+// import Product from "./components/Product";
 import Login from "./components/login";
 import Images from "./components/Images";
 import Forgot from "./components/Forgot";
