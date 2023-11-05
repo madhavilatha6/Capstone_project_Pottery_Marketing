@@ -1,156 +1,161 @@
-import { useEffect , useState} from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import "./product.css";
-const Displayproduct = () => {
-        const [inputValue, setInputValue] = useState('');
-        const [potteryData,setPotteryData] = useState([]);
-        const [color, setColor] = useState("gray");
-        const [value, setValue] = useState(1);
-    useEffect(()=>{
-        PotteryProductData();
-    },[])
-    const PotteryProductData = () => {
-        fetch("http://localhost:5050/data").then((res)=>{
-            return res.json();
-        }).then((res)=>{
-            setPotteryData(res);
-            console.log(res);
-        })
+import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { searchProducts } from "../Redux/ProductReducer/action.js"; // Replace 'action' with the actual file name
+import { getSearchProductFailure } from "../Redux/ProductReducer/action.js";
+
+const DisplayProduct = () => {
+  const [inputValue, setInputValue] = useState("");
+  const [potteryData, setPotteryData] = useState([]);
+  const [loading, setLoading] = useState(false);
+
+  const productData = useSelector((state) => state.products.productData);
+
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    fetchPotteryProductData();
+  }, []);
+
+  const fetchPotteryProductData = async () => {
+    3;
+    try {
+      const response = await axios.get("http://localhost:8080/products");
+      setPotteryData(response.data);
+      console.log("Pottery Data:", response.data);
+    } catch (error) {
+      console.error("Error fetching pottery data:", error);
     }
-
-    const searchProductData = () => {
-        fetch(`http://localhost:5050/search/${inputValue}`).then((res)=>{
-            return res.json();
-        }).then((res)=>{
-            setPotteryData(res);
-            console.log(res);
-        })
+  };
+  const searchProductData = async () => {
+    try {
+      if (inputValue === "") fetchPotteryProductData();
+      else {
+        const response = await axios.get(
+          `http://localhost:8080/products/searchByName/${inputValue}`
+        );
+        setPotteryData(response.data);
+      }
+    } catch (error) {
+      console.error("Error searching for products:", error);
+      dispatch(getSearchProductFailure());
     }
+  };
 
-    const sortData = (data) =>{
-        fetch(`http://localhost:5050/sort/${data}`).then((res)=>{
-            return res.json();
-        }).then((res)=>{
-            setPotteryData(res);
-            console.log(res);
-        })
-    }
-
-      
-        const handleInputChange = (event) => {
-          setInputValue(event.target.value);
-        };
-
-        function clearData(){
-            setInputValue("");
-        }
-
-       
-        
-    return (
+  const sortData = (sortOrder) => {
+    const apiUrl = `http://localhost:8080/products/sort=${sortOrder}`;
     
+    fetch(apiUrl)
+      .then((res) => res.json())
+      .then((res) => {
+        setPotteryData(res);
+        console.log(res);
+      })
+      .catch((error) => {
+        console.error("Error in sortData:", error);
+      });
+}
+
+
+  const handleInputChange = (event) => {
+    setInputValue(event.target.value);
+  };
+
+  function clearData() {
+    setInputValue("");
+  }
+
+  return (
     <div>
-        <div className="color">
-        <div className="categories">
-                        <div className="design">
-                            <img src="https://leadwinner.com/shilparamam2/images2/tera/3.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
-                        </div>
-                        <div className="flower">
-                            <img src="https://leadwinner.com/shilparamam2/images2/tera/1.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
-                        </div>
-                        <div className="hangingbells">
-                            <img src="https://leadwinner.com/shilparamam2/images2/tera/12.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
-                        </div>
-                        <div className="naturalpots">
-                            <img src="https://leadwinner.com/shilparamam2/images2/tera/10.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
-                        </div>
-                        <div className="animaldesign">
-                            <img src="https://leadwinner.com/shilparamam2/images2/tera/20.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
-                        </div>
-                        <div className="animal">
-                            <img src="https://leadwinner.com/shilparamam2/images2/tera/20.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
-                        </div>
-                        
-                    </div>
-                    <div className="text-align">
-                        <p className="one">Design Pot</p>
-                        <p className="two">Flower Pot</p>
-                        <p className="three">Hanging bell</p>
-                        <p className="four">Natural Pot</p>
-                        <p className="five">Cooking Pot</p>
-                        <p className="six">Cooking Pot</p>
-                    </div>
-                   
-       
-       <header>
-                <nav>
-                    <div id="navbar">
+      <div className="color">
+        <div className="categories"></div>
 
-                    <div id="colors">
-                        <input id="bar" type="text" placeholder="Search" value={inputValue} onChange={handleInputChange} />
-                        <button id="searchdata" onClick={searchProductData}>search</button>
-                        <img onClick={clearData} id="wrong"src="https://tse4.mm.bing.net/th?id=OIP.5QYvJ6lCh-_pQ0AeWcpOfQHaHa&pid=Api&P=0&h=180" alt="" />
-                        
-                    </div>
-                    <img id="emoji"src="https://media.tenor.com/images/e7997130d42c853ea735e526beee6144/tenor.gif" alt="" />       
-                
-       
-        <div id="lowhigh">
+        <header>
+          <nav>
+            <div id="navbar">
+              <div id="colors">
+                <input
+                  id="bar"
+                  type="text"
+                  placeholder="Search"
+                  value={inputValue}
+                  onChange={handleInputChange}
+                />
+                <button id="searchdata" onClick={searchProductData}>
+                  Search
+                </button>
+                <img
+                  onClick={clearData}
+                  id="wrong"
+                  src="https://tse4.mm.bing.net/th?id=OIP.5QYvJ6lCh-_pQ0AeWcpOfQHaHa&pid=Api&P=0&h=180"
+                  alt=""
+                />
+              </div>
+              <div id="lowhigh">
                 <select name="cars" onChange={(e) => sortData(e.target.value)}>
-                    <option>Sort By Price</option>
-                    <option value="asc">LowToHigh</option>
-                    <option value="desc">HighToLow</option>
+                  <option>Sort By Price</option>
+                  <option value="asc">LowToHigh</option>
+                  <option value="desc">HighToLow</option>
                 </select>
-        </div>
-
-       
-        </div>
-        </nav>
+              </div>
+            </div>
+          </nav>
         </header>
-                   
-                    
-           
-       <div className="array">
-       {
-        potteryData?.filter(function(element){
-            if(element.category_name.toLocaleLowerCase().includes(inputValue.toLocaleLowerCase())){
-                return potteryData;
-            }
-        })?.map(({category_image,category_name,category_price})=><div id="pictires_display">
-            <div className="display">
+        <div className="array">
+          {Array.isArray(potteryData) ? (
+            potteryData.length > 0 ? (
+              potteryData.map((product, index) => (
+                <div key={index} id="pictures_display">
+                  <div className="display" key={index}>
+                    <div className="hoverimg">
+                      <img
+                        id="hoverimage"
+                        src={product.productImage}
+                        alt={product.productImage}
+                      />
+                      <div className="smallBoxes1">
+                        <img
+                          className="hoverimg1"
+                          src="https://thumbs.dreamstime.com/b/shopping-cart-icon-vector-logo-137280611.jpg"
+                          alt="Add to Cart"
+                        />
+                      </div>
+                    </div>
+                    <div className="hover">
+                      <h4>{product.productName}</h4>
+                      <h4>{product.productPrice}</h4>
+                      <div id="boxesSmall"></div>
+                    </div>
+                  </div>
+                </div>
+              ))
+            ) : (
+              <p>NO Products</p>
+            )
+          ) : (
+            <div id="pictures_display">
+              <div className="display">
                 <div>
-                    <img src={category_image} alt="" />
+                  <img
+                    src={potteryData["products"].categaryImage}
+                    alt={potteryData["products"].categaryName}
+                  />
                 </div>
                 <div className="hover">
-                    <h4>{category_name}</h4>
-                    <h4>{category_price}</h4>
-                    <div id="boxesSmall">
-                    <div className="smallBoxes1"><img src="https://thumbs.dreamstime.com/b/shopping-cart-icon-vector-logo-137280611.jpg" alt="" /></div>
-                    {/* <div className="addtocart">Add to Cart</div> */}
-                    <div className="smallBoxes2"><img src="https://media.istockphoto.com/id/1284125145/photo/magnifying-glass-top-view-with-blue-tinted-lens.jpg?s=612x612&w=0&k=20&c=1lOGI1OLFj4bHi4liplOollhhplRaYm99uvhL53fY8Q=" alt="" /></div>
-                    {/* <div className="view">View</div> */}
-                    <div className="smallBoxes3"><img src="https://png.pngtree.com/png-vector/20220611/ourmid/pngtree-wish-list-icon-wishlist-check-png-image_4841955.png" alt="" /></div>
-                    {/* <div className="wishlist">Wishlist</div> */}
-                    </div>
+                  <h4>{potteryData["products"].categaryName}</h4>
+                  <h4>{potteryData["products"].categaryDescription}</h4>
                 </div>
-            
+              </div>
             </div>
+          )}
         </div>
-        )
-    
-       }
-     
+      </div>
     </div>
-</div>
-    
-</div>
-)}
+  );
+};
 
-export default Displayproduct;
-
-// get data from the input box in react using hooks useState
-// write a fucntion for calling the api
-// pass input value while calling the api
-// display the data accordingly
-//modify the search api 
-//if the user search with a half text
-//result should came
+export default DisplayProduct;

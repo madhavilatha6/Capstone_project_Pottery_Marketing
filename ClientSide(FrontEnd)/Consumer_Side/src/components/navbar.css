@@ -1,0 +1,47 @@
+.displayflex {
+  display: flex;
+  justify-content: space-between;
+}
+.addtocart {
+  width: 60px;
+  height: 60px;
+  margin: 0px 0px 0px 0px;
+}
+.nav {
+  margin-top: 15px;
+  margin-left: 10px;
+  height: 45px;
+}
+
+.bar {
+  padding: 10px 0px;
+  height: 20px;
+  margin: 10px 0px 0px 100px;
+}
+.cartpage {
+  margin: 25px 0px 0px 10px;
+  justify-content: end;
+}
+.searchlogo {
+  width: 70px;
+  height: 70px;
+  margin: 0px 90px 0px 0px;
+}
+#home {
+  margin-left: 100px;
+  text-decoration: none;
+  font-family: Assistant;
+  font-size: 20px;
+  color: black;
+}
+
+.hello {
+  text-decoration: none;
+  color: black;
+}
+.hello:hover {
+  color: #b3886d;
+}
+.cartpage:hover {
+  color: #b3886d;
+}
