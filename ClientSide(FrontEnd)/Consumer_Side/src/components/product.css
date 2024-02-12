@@ -4,8 +4,10 @@
 
 .categories {
   padding: 50px;
-  margin: 40px;
-  margin-top: 60px;
+  /* margin: 40px; */
+  margin-top: 400px;
+  border: 2px solid red;
+  width: 400px;
 }
 .hover {
   padding: 7px;
@@ -148,7 +150,7 @@
   margin-top: -30px;
 }
 #bar {
-  margin-left: 0px;
+  margin-left: -306px;
   margin-top: -400px;
 
   border: 2px solid rgb(243, 194, 47);
@@ -161,7 +163,7 @@
   border: 2px solid rgb(243, 194, 47);
 }
 .display {
-  width: 300px;
+  width: 330px;
   margin-top: 40px;
   margin-left: 40px;
   text-align: center;
@@ -183,6 +185,8 @@
 .array {
   display: flex;
   flex-wrap: wrap;
+  margin-left: 150px;
+  margin-top: -50px;
 }
 .text-align {
   font-size: 20px;
@@ -213,16 +217,26 @@
 }
 #colors {
   border: 2px solid white;
-  padding: 1px;
-  margin-top: -100px;
+  padding: 3px;
+  margin-top: -160px;
+  margin-left: 430px;
 }
 #colors > #bar {
   width: 350px;
-  height: 40px;
+  height: 50px;
+  border: 2px solid #b3886d;
 }
 #colors > #searchdata {
   width: 100px;
-  height: 40px;
+  height: 50px;
+  margin-left: 30px;
+  border-radius: 0%;
+  background-color: #b3886d;
+  border: 2px solid #b3886d;
+  color: aliceblue;
+}
+#colors > #searchdata:hover{
+  background-color: gray;
 }
 .clearsearch > img {
   margin-top: -400px;
@@ -260,13 +274,17 @@
 }
 
 #lowhigh {
-  margin-top: -90px;
-  margin-left: 80%;
   border-radius: 30px;
+  padding: 20px;
+  margin-top: -68px;
 }
 select {
-  padding: 12px;
+  padding: 13px;
   font-size: 15px;
+  width: 250px;
+  margin-left: 73%;
+  margin-top: -500px;
+  border: 2px solid #b3886d;
 }
 #category {
   margin-top: -45px;
@@ -332,7 +350,7 @@ select {
 .hoverimg {
   position: relative;
 
-  width: 200px;
+  width: 220px;
   transition: background-color 0.3s;
 }
 
@@ -351,12 +369,12 @@ select {
   z-index: -1;
 }
 
-.hoverimg:hover .smallBoxes1 {
+/* .hoverimg:hover .smallBoxes1 {
   display: block;
   z-index: 0;
-}
+} */
 #hoverimage {
-  width: 300px;
+  width: 330px;
   height: 300px;
 }
 .hoverimg1 {
@@ -364,4 +382,18 @@ select {
 }
 .smallBoxes1 > img {
   border: 2px solid #b3886d;
+}
+.filter_box{
+  /* border: 2px solid red; */
+  width: 250px;
+  margin: 40px 0px 0px -260px;
+  left: 0%;
+}
+.cartOne{
+  padding: 10px 15px 10px 15px;
+  border-radius: 10px;
+  margin-right: 91px;
+  background-color: #b3886d;
+  color: white;
+  border: 1px solid #b3886d;
 }

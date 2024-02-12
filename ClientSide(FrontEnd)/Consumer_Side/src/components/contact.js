@@ -10,20 +10,20 @@ function Contact() {
       />
       <div className="locationInfo">
         <div className="class">
-          <h2>Location</h2>
+          <h3>Location</h3>
           <p>Gantavoor</p>
           <p>Palamaner</p>
           <p>517408</p>
           <p>Andrapradesh</p>
         </div>
         <div className="class">
-          <h2>OurHours</h2>
+          <h3>OurHours</h3>
           <p>All time</p>
         </div>
         <div className="class">
-          <h2>ContactUs</h2>
-          <p>Email:madhavilathamadhu54@gmail.com</p>
-          <p>phone:123456789</p>
+          <h3>ContactUs</h3>
+          <p>Email:   madhavilathamadhu54@gmail.com</p>
+          <p>phone:   123456789</p>
         </div>
       </div>
       <div className="map">

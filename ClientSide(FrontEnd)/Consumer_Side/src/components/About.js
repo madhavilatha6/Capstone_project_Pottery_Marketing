@@ -27,7 +27,7 @@ function About() {
             black and red clay, creating exquisite pieces like painted lamps,
             musical instruments, vases, idols, and more.
           </div>
-          <button className="about-read">Read More</button>
+          <button id="about-read">Read More</button>
         </div>
         <div className="who-2">
           <img

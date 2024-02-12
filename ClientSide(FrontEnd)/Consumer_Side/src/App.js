@@ -14,6 +14,7 @@ import Forgot from "./components/Forgot";
 import { Route, Routes } from "react-router";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
+import CartPage from "./components/CartPage";
 
 function App() {
   return (
@@ -25,7 +26,11 @@ function App() {
         <Route path="/about" Component={About} />
         <Route path="/contact" Component={Contact} />
         <Route path="/checkout" Component={Checkout} />
+        <Route path="/cart" Component={CartPage} />
+        <Route path="/checkout" Component={Checkout} />
       </Routes>
+      {/* <Signup /> */}
+      {/* <Checkout /> */}
       <Footer />
     </div>
   );

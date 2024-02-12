@@ -48,7 +48,7 @@ const DisplayProduct = () => {
 
   const sortData = (sortOrder) => {
     const apiUrl = `http://localhost:8080/products/sort=${sortOrder}`;
-    
+
     fetch(apiUrl)
       .then((res) => res.json())
       .then((res) => {
@@ -58,8 +58,7 @@ const DisplayProduct = () => {
       .catch((error) => {
         console.error("Error in sortData:", error);
       });
-}
-
+  };
 
   const handleInputChange = (event) => {
     setInputValue(event.target.value);
@@ -69,11 +68,14 @@ const DisplayProduct = () => {
     setInputValue("");
   }
 
+  const handleAddToCart = () => {
+    // You can add the logic to add the product to the cart here
+    // For now, let's just navigate to the CartPage
+    navigate("/cart");
+  };
   return (
     <div>
       <div className="color">
-        <div className="categories"></div>
-
         <header>
           <nav>
             <div id="navbar">
@@ -106,6 +108,7 @@ const DisplayProduct = () => {
           </nav>
         </header>
         <div className="array">
+          <div className="filter_box"></div>
           {Array.isArray(potteryData) ? (
             potteryData.length > 0 ? (
               potteryData.map((product, index) => (
@@ -117,17 +120,20 @@ const DisplayProduct = () => {
                         src={product.productImage}
                         alt={product.productImage}
                       />
-                      <div className="smallBoxes1">
-                        <img
+                      {/* <div className="smallBoxes1"  onClick={handleAddToCart}> */}
+                      {/* <img
                           className="hoverimg1"
                           src="https://thumbs.dreamstime.com/b/shopping-cart-icon-vector-logo-137280611.jpg"
                           alt="Add to Cart"
-                        />
-                      </div>
+                        />   */}
+                      {/* </div> */}
                     </div>
                     <div className="hover">
                       <h4>{product.productName}</h4>
                       <h4>{product.productPrice}</h4>
+                      <button className="cartOne" onClick={handleAddToCart}>
+                        Add to cart
+                      </button>
                       <div id="boxesSmall"></div>
                     </div>
                   </div>

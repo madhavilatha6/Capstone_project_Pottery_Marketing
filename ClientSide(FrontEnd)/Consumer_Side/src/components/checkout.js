@@ -8,61 +8,67 @@ function Checkout() {
         src="https://sktperfectdemo.com/themepack/pottery/wp-content/themes/skt-pottery/images/default-header-img.jpg"
         alt=""
       />
-      <h1>Checkout</h1>
-      <hr></hr>
-      <h3>Contact Details</h3>
-      <div className="fullname">
-        <div>
-          <label for="test">First Name</label>
-          <br></br>
-          <input type="text" placeholder="FirstName" />
-        </div>
-        <div className="last">
-          <label for="test">Last Name</label>
-          <br></br>
-          <input type="text" placeholder="LastName" />
-        </div>
-      </div>
+      <h1 className="check">Checkout</h1>
+      <div className="color-div"></div>
+      <div id="checkout-div">
+          <div className="details-contact">
+            <h3 className="contact-details">Contact Details</h3>
+            <div className="main-input-page">
+              <div>
+                <label className="name-label">FirstName</label>
+                <br></br>
+                <input className="firstname" placeholder="FirstName" />
+              </div>
+              <div>
+                <label className="name-label1">LastName</label>
+                <br></br>
+                <input className="lastname" placeholder="LastName" />
+              </div>
+            </div>
 
-      <div className="lastname">
-        <div>
-          <label for="test">Email Address</label>
-          <br></br>
-          <input type="email" placeholder="Email" />
-        </div>
-        <div className="last">
-          <label for="test">Mobile Number</label>
-          <br></br>
-          <input type="number" placeholder="MobileNumber" />
-        </div>
-      </div>
+            <div className="main-input-page1">
+              <div>
+                <label className="name-label3">FirstName</label>
+                <br></br>
+                <input className="firstname1" placeholder="FirstName1" />
+              </div>
+              <div>
+                <label className="name-label4">LastName</label>
+                <br></br>
+                <input className="lastname1" placeholder="LastName" />
+              </div>
+            </div>
+            <div className="main-input-page2">
+              <div>
+                <label className="name-label5">Address</label>
+                <br></br>
+                <input className="firstname2" placeholder="Flat,House No" />
+                <br></br>
+              </div>
+            </div>
+            <div className="main-input-page3">
+              <div>
+                <input className="firstname2" placeholder="Flat,House No" />
+              </div>
 
-      <div className="full">
-        <div>
-          <label for="test">Country</label>
-          <br></br>
-          <input type="text" placeholder="Country" />
+              <div className="main-input-page4">
+                <div>
+                  <label className="name-label3">FirstName</label>
+                  <br></br>
+                  <input className="firstname1" placeholder="FirstName1" />
+                </div>
+                <div>
+                  <label className="name-label4">LastName</label>
+                  <br></br>
+                  <input className="lastname1" placeholder="LastName" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="details-contact1">
+              <h3 className="contact-details">Your Order</h3>
+          </div>
         </div>
-        <div className="last">
-          <label for="test">State</label>
-          <br></br>
-          <input type="text" placeholder="State" />
-        </div>
-      </div>
-
-      <div className="last1">
-        <div>
-          <label for="test">Street Address</label>
-          <br></br>
-          <input type="text" placeholder="Address" />
-        </div>
-        <div className="last">
-          <label for="test">Pincode</label>
-          <br></br>
-          <input type="text" placeholder="Pincode" />
-        </div>
-      </div>
-      <hr></hr>
     </div>
   );
 }

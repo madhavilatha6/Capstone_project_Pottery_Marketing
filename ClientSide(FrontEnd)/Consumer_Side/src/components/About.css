@@ -76,7 +76,7 @@ h2 {
   margin-top: 80px;
 }
 .pottery {
-  border: 2px solid rgb(189, 188, 188);
+  border: 2px solid #b3886d;
   margin: 150px;
   width: 80%;
   height: 500px;
@@ -240,7 +240,7 @@ p {
 .border {
   border: 2px solid rgb(189, 188, 188);
   margin: 10px;
-  border-radius: 30px;
+  border-radius: 0px;
   margin-left: 40px;
   margin-top: 150px;
 }
@@ -269,8 +269,18 @@ h1 {
   width: 100px;
   margin-left: 0%;
 }
-.about-read {
-  padding: 20px;
+#about-read {
+  padding: 16px;
+  margin-left: -1px;
+  margin-top: 60px;
+  border-radius: 0%;
+  border: 2px solid #b3886d;
+  color: white;
+  background-color: #b3886d;
+}
+#about-read:hover {
+  background-color: gray;
+  color: white;
 }
 .heading {
   margin: 10px 10px 10px 0px;

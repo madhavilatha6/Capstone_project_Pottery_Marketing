@@ -31,11 +31,12 @@ function Navbar() {
               Contact Us
             </Link>
           </h4>
-          <input placeholder="search" className="bar" />
+          {/* <input placeholder="search" className="bar" />
           <img
             className="searchlogo"
             src="https://t3.ftcdn.net/jpg/05/99/84/86/360_F_599848646_MdK7wVDJQZygObyKEahVkOuhh0IGdTt3.jpg"
-          />
+          /> */}
+          
           <h4 className="cartpage">Cart</h4>
           <img
             className="addtocart"

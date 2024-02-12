@@ -50,3 +50,99 @@ button {
   margin: 20px;
   margin-left: 35%;
 }
+.check{
+  text-align: center;
+}
+.color-div{
+  padding: 16px;
+  border: 2px solid #b3886d;
+  margin: 10px 100px 10px 100px;
+  background-color: #b3886d;
+}
+.contact-details{
+  margin-left: 100px;
+}
+.input{
+  margin-left: 100px;
+}
+.label{
+  margin-left: -2px;
+  padding: 10px;
+}
+.main-input-page{
+  display: flex;
+}
+.main-input-page1{
+  display: flex;
+  margin-top: 20px;
+}
+.main-input-page2{
+  display: flex;
+  margin-top: 20px;
+}
+.main-input-page4{
+  display: flex;
+  margin-top: 20px;
+}
+.firstname{
+  padding: 10px;
+  width: 250px;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+.firstname1{
+  padding: 10px;
+  width: 250px;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+.firstname2{
+  padding: 10px;
+  width: 625px;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+.name-label{
+  margin-top: 20px;
+  margin-left: 100px;
+}
+.name-label1{
+  margin-top: 20px;
+  margin-left: 100px;
+}
+.name-label3{
+  margin-top: 20px;
+  margin-left: 100px;
+}
+.name-label4{
+  margin-top: 20px;
+  margin-left: 100px;
+}
+.name-label5{
+  margin-top: 20px;
+  margin-left: 100px;
+}
+.lastname{
+  padding: 10px;
+  width: 250px;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+.lastname1{
+  padding: 10px;
+  width: 250px;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+.color-div{
+  display: flex;
+}
+.details-contact{
+  border: 2px solid red;
+}
+#details-contact1{
+  border: 2px solid green;
+}
+#checkout-div{
+ display: flex; 
+}

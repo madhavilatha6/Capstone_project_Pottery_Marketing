@@ -3,6 +3,16 @@ package com.paradiseproject.paradiseproject.controller;
 import com.paradiseproject.paradiseproject.model.Product;
 import com.paradiseproject.paradiseproject.service.Paradiseservice;
 import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+
 
 
 @RestController
@@ -46,8 +56,8 @@ public class Paradisecontrol {
        return paradiseService.searchProductsByName(name);
      }
 
-    @DeleteMapping("/{id}")
-    public void deleteProduct(@PathVariable Long id) {
-        paradiseService.deleteProduct(id);
-    }
+    // @DeleteMapping("/{id}")
+    // public void deleteProduct(@PathVariable Long id) {
+    //     paradiseService.deleteProduct(id);
+    // }
 }
